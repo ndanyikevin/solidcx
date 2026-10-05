@@ -1,0 +1,7 @@
+{
+  "$schema": "./registry.schema.json",
+  "name": "solidcx",
+  "version": "0.1.0",
+  "homepage": "https://solidcx.vercel.app",
+  "components": ["button"]
+}

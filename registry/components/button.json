@@ -1,0 +1,24 @@
+{
+  "$schema": "../schema.json",
+  "name": "button",
+  "type": "registry:ui",
+  "title": "Button",
+  "description": "A versatile button component with multiple variants and sizes.",
+  "files": [
+    {
+      "path": "packages/ui/src/components/button/Button.tsx",
+      "type": "component"
+    },
+    {
+      "path": "packages/ui/src/components/button/button.scss",
+      "type": "style"
+    },
+    {
+      "path": "packages/ui/src/components/button/index.ts",
+      "type": "barrel"
+    }
+  ],
+  "dependencies": ["@solidcx/cx"],
+  "registryDependencies": [],
+  "cssDependencies": ["@solidcx/styles"]
+}
