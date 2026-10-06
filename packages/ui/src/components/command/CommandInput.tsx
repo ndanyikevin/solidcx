@@ -4,7 +4,7 @@ import {
     splitProps,
 } from 'solid-js'
 import { Search } from 'lucide-solid'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useCommand } from './Command'
 

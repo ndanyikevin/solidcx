@@ -6,7 +6,7 @@ import {
   onMount,
   splitProps,
 } from 'solid-js'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import './input-otp.scss'
 

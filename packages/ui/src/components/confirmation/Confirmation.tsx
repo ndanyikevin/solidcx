@@ -9,7 +9,7 @@ import {
   useContext,
   splitProps,
 } from 'solid-js'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import './confirmation.scss'
 

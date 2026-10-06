@@ -4,7 +4,7 @@ import {
     splitProps,
 } from 'solid-js'
 
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useMenubarMenu } from './context'
 

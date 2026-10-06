@@ -7,7 +7,7 @@ import {
     onCleanup,
 } from 'solid-js'
 import { Check } from 'lucide-solid'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useCommand } from './Command'
 

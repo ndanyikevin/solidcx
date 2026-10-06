@@ -1,6 +1,6 @@
 import type { Component, JSX } from 'solid-js'
 import { Show, splitProps } from 'solid-js'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 import { SidebarProvider, SidebarTrigger, useSidebar } from '../sidebar'
 
 import './app-shell.scss'

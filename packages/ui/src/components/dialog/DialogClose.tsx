@@ -2,7 +2,7 @@
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { X } from 'lucide-solid'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useDialog } from './Dialog'
 

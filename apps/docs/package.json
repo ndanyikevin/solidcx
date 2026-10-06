@@ -1,5 +1,5 @@
 {
-  "name": "@solidcn/docs",
+  "name": "@solidcx/docs",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
@@ -8,8 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@solidcn/styles": "workspace:^",
-    "@solidcn/ui": "workspace:^",
+    "@solidcx/styles": "workspace:^",
+    "@solidcx/ui": "workspace:^",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^1.0.0",
     "@solidjs/start": "^2.0.0",

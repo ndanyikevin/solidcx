@@ -7,7 +7,7 @@ import {
     splitProps,
 } from 'solid-js'
 import { isServer } from 'solid-js/web'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useDropdownMenu } from './DropdownMenu'
 

@@ -2,7 +2,7 @@ import type { Component } from 'solid-js'
 
 import { splitProps } from 'solid-js'
 
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import type {
     MenubarSeparatorProps,

@@ -3,7 +3,7 @@ import {
     createUniqueId,
     splitProps,
 } from 'solid-js'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useTabs } from './Tabs'
 

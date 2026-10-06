@@ -6,7 +6,7 @@ import {
     splitProps,
 } from 'solid-js'
 import { LoaderCircle } from 'lucide-solid'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useConfirmation } from './Confirmation'
 

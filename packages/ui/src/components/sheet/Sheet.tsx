@@ -10,7 +10,7 @@ import {
   splitProps,
 } from 'solid-js'
 import { Portal } from 'solid-js/web'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import './sheet.scss'
 

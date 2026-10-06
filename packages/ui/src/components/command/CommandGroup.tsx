@@ -1,6 +1,6 @@
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import './command.scss'
 

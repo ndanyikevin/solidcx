@@ -2,7 +2,7 @@
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { ChevronDown } from 'lucide-solid'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useDropdownMenu } from './DropdownMenu'
 

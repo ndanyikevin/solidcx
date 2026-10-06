@@ -5,7 +5,7 @@ import {
     on,
     splitProps,
 } from 'solid-js'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import './date-field.scss'
 

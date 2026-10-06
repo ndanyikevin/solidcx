@@ -1,7 +1,7 @@
 import type { Component } from 'solid-js'
 import { Show, splitProps } from 'solid-js'
 import { X } from 'lucide-solid'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import {
     useToast,

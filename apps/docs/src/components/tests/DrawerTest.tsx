@@ -10,7 +10,7 @@ import {
     DrawerHeader,
     DrawerTitle,
     DrawerTrigger,
-} from '@solidcn/ui'
+} from '@solidcx/ui'
 
 export default function DrawerTestPage() {
     const [controlledOpen, setControlledOpen] =

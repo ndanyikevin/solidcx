@@ -10,7 +10,7 @@ import {
   ChevronDown,
   X,
 } from 'lucide-solid'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { Calendar } from '../calendar'
 

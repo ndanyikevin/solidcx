@@ -4,7 +4,7 @@ import {
     splitProps,
 } from 'solid-js'
 
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import { useDrawer } from './context'
 

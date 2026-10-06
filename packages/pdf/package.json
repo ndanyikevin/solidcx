@@ -1,5 +1,5 @@
 {
-  "name": "@solidcn/pdf",
+  "name": "@solidcx/pdf",
   "version": "0.1.0",
   "type": "module",
   "main": "./src/index.ts",
@@ -10,7 +10,7 @@
     "./renderers": "./src/renderers/index.ts"
   },
   "dependencies": {
-    "@solidcn/styles": "workspace:*",
+    "@solidcx/styles": "workspace:*",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.0.0"
   },
