@@ -1,20 +1,20 @@
 {
     "$schema":  "../component.schema.json",
-    "name":  "button",
+    "name":  "hovercard",
     "type":  "registry:ui",
-    "title":  "Button",
-    "description":  "A reusable Button component for SolidJS applications.",
+    "title":  "Hovercard",
+    "description":  "A reusable Hovercard component for SolidJS applications.",
     "files":  [
                   {
-                      "path":  "packages/ui/src/components/button/button.scss",
+                      "path":  "packages/ui/src/components/hovercard/hover-card.scss",
                       "type":  "style"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/Button.tsx",
+                      "path":  "packages/ui/src/components/hovercard/HoverCard.tsx",
                       "type":  "component"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/index.ts",
+                      "path":  "packages/ui/src/components/hovercard/index.ts",
                       "type":  "barrel"
                   }
               ],

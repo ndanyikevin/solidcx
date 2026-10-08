@@ -1,0 +1,43 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "accordion",
+    "type":  "registry:ui",
+    "title":  "Accordion",
+    "description":  "A reusable Accordion component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/accordion/accordion.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/accordion/Accordion.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/accordion/AccordionContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/accordion/AccordionItem.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/accordion/AccordionTrigger.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/accordion/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

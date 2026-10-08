@@ -1,0 +1,50 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "card",
+    "type":  "registry:ui",
+    "title":  "Card",
+    "description":  "A reusable Card component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/card/card.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/card/Card.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/card/CardContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/card/CardDescription.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/card/CardFooter.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/card/CardHeader.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/card/CardTitle.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/card/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

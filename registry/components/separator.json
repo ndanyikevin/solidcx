@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "separator",
+    "type":  "registry:ui",
+    "title":  "Separator",
+    "description":  "A reusable Separator component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/separator/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/separator/separator.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/separator/Separator.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

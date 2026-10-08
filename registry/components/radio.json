@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "radio",
+    "type":  "registry:ui",
+    "title":  "Radio",
+    "description":  "A reusable Radio component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/radio/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/radio/radio.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/radio/Radio.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

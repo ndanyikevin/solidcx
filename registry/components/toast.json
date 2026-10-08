@@ -1,0 +1,39 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "toast",
+    "type":  "registry:ui",
+    "title":  "Toast",
+    "description":  "A reusable Toast component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/toast/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/toast/toast.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/toast/Toast.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/toast/ToastItem.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/toast/ToastViewport.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

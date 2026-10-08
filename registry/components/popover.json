@@ -1,0 +1,38 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "popover",
+    "type":  "registry:ui",
+    "title":  "Popover",
+    "description":  "A reusable Popover component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/popover/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/popover/popover.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/popover/Popover.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/popover/PopoverContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/popover/PopoverTrigger.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

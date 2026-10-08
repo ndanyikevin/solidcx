@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "spinner",
+    "type":  "registry:ui",
+    "title":  "Spinner",
+    "description":  "A reusable Spinner component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/spinner/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/spinner/spinner.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/spinner/Spinner.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

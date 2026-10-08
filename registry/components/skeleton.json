@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "skeleton",
+    "type":  "registry:ui",
+    "title":  "Skeleton",
+    "description":  "A reusable Skeleton component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/skeleton/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/skeleton/skeleton.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/skeleton/Skeleton.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

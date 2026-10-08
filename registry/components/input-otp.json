@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "input-otp",
+    "type":  "registry:ui",
+    "title":  "Input Otp",
+    "description":  "A reusable Input Otp component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/input-otp/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/input-otp/input-otp.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/input-otp/InputOTP.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

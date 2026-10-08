@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "select",
+    "type":  "registry:ui",
+    "title":  "Select",
+    "description":  "A reusable Select component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/select/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/select/select.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/select/Select.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

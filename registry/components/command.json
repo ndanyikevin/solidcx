@@ -1,0 +1,51 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "command",
+    "type":  "registry:ui",
+    "title":  "Command",
+    "description":  "A reusable Command component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/command/command.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/command/Command.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/command/CommandEmpty.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/command/CommandGroup.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/command/CommandInput.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/command/CommandItem.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/command/CommandList.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/command/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

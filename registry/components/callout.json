@@ -1,0 +1,38 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "callout",
+    "type":  "registry:ui",
+    "title":  "Callout",
+    "description":  "A reusable Callout component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/callout/callout.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/callout/Callout.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/callout/CalloutDescription.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/callout/CalloutTitle.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/callout/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

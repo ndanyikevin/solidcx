@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "label",
+    "type":  "registry:ui",
+    "title":  "Label",
+    "description":  "A reusable Label component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/label/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/label/label.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/label/Label.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

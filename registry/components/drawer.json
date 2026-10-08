@@ -1,0 +1,66 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "drawer",
+    "type":  "registry:ui",
+    "title":  "Drawer",
+    "description":  "A reusable Drawer component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/drawer/context.ts",
+                      "type":  "utility"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/drawer.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/Drawer.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/DrawerClose.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/DrawerContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/DrawerDescription.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/DrawerFooter.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/DrawerHeader.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/DrawerTitle.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/DrawerTrigger.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/drawer/types.ts",
+                      "type":  "utility"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

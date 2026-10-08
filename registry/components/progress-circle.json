@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "progress-circle",
+    "type":  "registry:ui",
+    "title":  "Progress Circle",
+    "description":  "A reusable Progress Circle component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/progress-circle/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/progress-circle/progress-circle.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/progress-circle/ProgressCircle.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

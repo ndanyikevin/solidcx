@@ -1,0 +1,43 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "dropdown-menu",
+    "type":  "registry:ui",
+    "title":  "Dropdown Menu",
+    "description":  "A reusable Dropdown Menu component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/dropdown-menu/dropdown-menu.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dropdown-menu/DropdownMenu.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dropdown-menu/DropdownMenuContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dropdown-menu/DropdownMenuItem.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dropdown-menu/DropdownMenuTrigger.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dropdown-menu/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

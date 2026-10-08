@@ -1,20 +1,20 @@
 {
     "$schema":  "../component.schema.json",
-    "name":  "button",
+    "name":  "form",
     "type":  "registry:ui",
-    "title":  "Button",
-    "description":  "A reusable Button component for SolidJS applications.",
+    "title":  "Form",
+    "description":  "A reusable Form component for SolidJS applications.",
     "files":  [
                   {
-                      "path":  "packages/ui/src/components/button/button.scss",
+                      "path":  "packages/ui/src/components/form/form.scss",
                       "type":  "style"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/Button.tsx",
+                      "path":  "packages/ui/src/components/form/Form.tsx",
                       "type":  "component"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/index.ts",
+                      "path":  "packages/ui/src/components/form/index.ts",
                       "type":  "barrel"
                   }
               ],

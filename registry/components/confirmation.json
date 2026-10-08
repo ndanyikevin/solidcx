@@ -1,0 +1,51 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "confirmation",
+    "type":  "registry:ui",
+    "title":  "Confirmation",
+    "description":  "A reusable Confirmation component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/confirmation/confirmation.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/confirmation/Confirmation.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/confirmation/ConfirmationActions.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/confirmation/ConfirmationCancel.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/confirmation/ConfirmationConfirm.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/confirmation/ConfirmationDescription.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/confirmation/ConfirmationTitle.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/confirmation/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

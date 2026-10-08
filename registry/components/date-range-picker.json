@@ -1,0 +1,31 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "date-range-picker",
+    "type":  "registry:ui",
+    "title":  "Date Range Picker",
+    "description":  "A reusable Date Range Picker component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/date-range-picker/date-range-picker.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/date-range-picker/DateRangePicker.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/date-range-picker/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+                                 "calendar"
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

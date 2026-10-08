@@ -1,0 +1,54 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "context-menu",
+    "type":  "registry:ui",
+    "title":  "Context Menu",
+    "description":  "A reusable Context Menu component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/context-menu/context.ts",
+                      "type":  "utility"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/context-menu/context-menu.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/context-menu/ContextMenu.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/context-menu/ContextMenuContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/context-menu/ContextMenuItem.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/context-menu/ContextMenuSeparator.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/context-menu/ContextMenuTrigger.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/context-menu/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/context-menu/types.ts",
+                      "type":  "utility"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

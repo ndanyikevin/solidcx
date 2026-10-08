@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "input",
+    "type":  "registry:ui",
+    "title":  "Input",
+    "description":  "A reusable Input component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/input/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/input/input.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/input/Input.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

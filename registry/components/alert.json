@@ -1,20 +1,20 @@
 {
     "$schema":  "../component.schema.json",
-    "name":  "button",
+    "name":  "alert",
     "type":  "registry:ui",
-    "title":  "Button",
-    "description":  "A reusable Button component for SolidJS applications.",
+    "title":  "Alert",
+    "description":  "A reusable Alert component for SolidJS applications.",
     "files":  [
                   {
-                      "path":  "packages/ui/src/components/button/button.scss",
+                      "path":  "packages/ui/src/components/alert/alert.scss",
                       "type":  "style"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/Button.tsx",
+                      "path":  "packages/ui/src/components/alert/Alert.tsx",
                       "type":  "component"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/index.ts",
+                      "path":  "packages/ui/src/components/alert/index.ts",
                       "type":  "barrel"
                   }
               ],

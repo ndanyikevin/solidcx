@@ -1,0 +1,42 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "tabs",
+    "type":  "registry:ui",
+    "title":  "Tabs",
+    "description":  "A reusable Tabs component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/tabs/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tabs/tabs.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tabs/Tabs.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tabs/TabsContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tabs/TabsList.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tabs/TabsTrigger.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

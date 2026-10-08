@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "sheet",
+    "type":  "registry:ui",
+    "title":  "Sheet",
+    "description":  "A reusable Sheet component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/sheet/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sheet/sheet.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sheet/Sheet.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

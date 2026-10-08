@@ -1,0 +1,54 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "sidebar",
+    "type":  "registry:ui",
+    "title":  "Sidebar",
+    "description":  "A reusable Sidebar component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/sidebar/context.ts",
+                      "type":  "utility"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sidebar/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sidebar/sidebar.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sidebar/SidebarMenu.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sidebar/SidebarProvider.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sidebar/SidebarRoot.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sidebar/SidebarSections.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sidebar/SidebarTrigger.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/sidebar/types.ts",
+                      "type":  "utility"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

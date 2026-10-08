@@ -1,0 +1,51 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "breadcrumb",
+    "type":  "registry:ui",
+    "title":  "Breadcrumb",
+    "description":  "A reusable Breadcrumb component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/breadcrumb/breadcrumb.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/breadcrumb/Breadcrumb.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/breadcrumb/BreadcrumbItem.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/breadcrumb/BreadcrumbLink.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/breadcrumb/BreadcrumbList.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/breadcrumb/BreadcrumbPage.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/breadcrumb/BreadcrumbSeparator.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/breadcrumb/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

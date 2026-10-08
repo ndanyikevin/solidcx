@@ -1,20 +1,20 @@
 {
     "$schema":  "../component.schema.json",
-    "name":  "button",
+    "name":  "collapsible",
     "type":  "registry:ui",
-    "title":  "Button",
-    "description":  "A reusable Button component for SolidJS applications.",
+    "title":  "Collapsible",
+    "description":  "A reusable Collapsible component for SolidJS applications.",
     "files":  [
                   {
-                      "path":  "packages/ui/src/components/button/button.scss",
+                      "path":  "packages/ui/src/components/collapsible/collapsible.scss",
                       "type":  "style"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/Button.tsx",
+                      "path":  "packages/ui/src/components/collapsible/Collapsible.tsx",
                       "type":  "component"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/index.ts",
+                      "path":  "packages/ui/src/components/collapsible/index.ts",
                       "type":  "barrel"
                   }
               ],

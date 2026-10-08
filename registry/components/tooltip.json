@@ -1,0 +1,38 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "tooltip",
+    "type":  "registry:ui",
+    "title":  "Tooltip",
+    "description":  "A reusable Tooltip component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/tooltip/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tooltip/tooltip.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tooltip/Tooltip.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tooltip/TooltipContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/tooltip/TooltipTrigger.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

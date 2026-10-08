@@ -1,0 +1,58 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "menubar",
+    "type":  "registry:ui",
+    "title":  "Menubar",
+    "description":  "A reusable Menubar component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/menubar/context.ts",
+                      "type":  "utility"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/menubar.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/Menubar.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/MenubarContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/MenubarItem.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/MenubarMenu.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/MenubarSeparator.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/MenubarTrigger.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/menubar/types.ts",
+                      "type":  "utility"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

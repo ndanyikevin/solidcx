@@ -1,20 +1,20 @@
 {
     "$schema":  "../component.schema.json",
-    "name":  "button",
+    "name":  "badge",
     "type":  "registry:ui",
-    "title":  "Button",
-    "description":  "A reusable Button component for SolidJS applications.",
+    "title":  "Badge",
+    "description":  "A reusable Badge component for SolidJS applications.",
     "files":  [
                   {
-                      "path":  "packages/ui/src/components/button/button.scss",
+                      "path":  "packages/ui/src/components/badge/badge.scss",
                       "type":  "style"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/Button.tsx",
+                      "path":  "packages/ui/src/components/badge/Badge.tsx",
                       "type":  "component"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/index.ts",
+                      "path":  "packages/ui/src/components/badge/index.ts",
                       "type":  "barrel"
                   }
               ],

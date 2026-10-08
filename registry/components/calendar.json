@@ -1,25 +1,26 @@
 {
     "$schema":  "../component.schema.json",
-    "name":  "button",
+    "name":  "calendar",
     "type":  "registry:ui",
-    "title":  "Button",
-    "description":  "A reusable Button component for SolidJS applications.",
+    "title":  "Calendar",
+    "description":  "A reusable Calendar component for SolidJS applications.",
     "files":  [
                   {
-                      "path":  "packages/ui/src/components/button/button.scss",
+                      "path":  "packages/ui/src/components/calendar/calendar.scss",
                       "type":  "style"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/Button.tsx",
+                      "path":  "packages/ui/src/components/calendar/Calendar.tsx",
                       "type":  "component"
                   },
                   {
-                      "path":  "packages/ui/src/components/button/index.ts",
+                      "path":  "packages/ui/src/components/calendar/index.ts",
                       "type":  "barrel"
                   }
               ],
     "dependencies":  [
-                         "@solidcx/cx"
+                         "@solidcx/cx",
+                         "lucide-solid"
                      ],
     "registryDependencies":  [
 

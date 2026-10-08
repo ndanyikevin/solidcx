@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "textarea",
+    "type":  "registry:ui",
+    "title":  "Textarea",
+    "description":  "A reusable Textarea component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/textarea/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/textarea/textarea.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/textarea/Textarea.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

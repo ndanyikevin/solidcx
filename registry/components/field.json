@@ -1,0 +1,38 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "field",
+    "type":  "registry:ui",
+    "title":  "Field",
+    "description":  "A reusable Field component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/field/field.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/field/Field.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/field/FieldDescription.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/field/FieldError.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/field/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

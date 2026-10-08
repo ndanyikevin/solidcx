@@ -1,0 +1,32 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "date-picker",
+    "type":  "registry:ui",
+    "title":  "Date Picker",
+    "description":  "A reusable Date Picker component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/date-picker/date-picker.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/date-picker/DatePicker.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/date-picker/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+                                 "calendar",
+                                 "popover"
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

@@ -1,0 +1,30 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "switch",
+    "type":  "registry:ui",
+    "title":  "Switch",
+    "description":  "A reusable Switch component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/switch/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/switch/switch.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/switch/Switch.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

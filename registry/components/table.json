@@ -1,0 +1,54 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "table",
+    "type":  "registry:ui",
+    "title":  "Table",
+    "description":  "A reusable Table component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/table/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/table/table.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/table/Table.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/table/TableBody.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/table/TableCaption.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/table/TableCell.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/table/TableHead.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/table/TableHeader.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/table/TableRow.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

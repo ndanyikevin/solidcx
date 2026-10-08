@@ -1,0 +1,43 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "dialog",
+    "type":  "registry:ui",
+    "title":  "Dialog",
+    "description":  "A reusable Dialog component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/dialog/dialog.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dialog/Dialog.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dialog/DialogClose.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dialog/DialogContent.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dialog/DialogTrigger.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/dialog/index.ts",
+                      "type":  "barrel"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}

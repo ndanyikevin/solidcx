@@ -1,0 +1,47 @@
+{
+    "$schema":  "../component.schema.json",
+    "name":  "pagination",
+    "type":  "registry:ui",
+    "title":  "Pagination",
+    "description":  "A reusable Pagination component for SolidJS applications.",
+    "files":  [
+                  {
+                      "path":  "packages/ui/src/components/pagination/index.ts",
+                      "type":  "barrel"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/pagination/pagination.scss",
+                      "type":  "style"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/pagination/Pagination.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/pagination/PaginationEllipsis.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/pagination/PaginationItem.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/pagination/PaginationNext.tsx",
+                      "type":  "component"
+                  },
+                  {
+                      "path":  "packages/ui/src/components/pagination/PaginationPrevious.tsx",
+                      "type":  "component"
+                  }
+              ],
+    "dependencies":  [
+                         "@solidcx/cx",
+                         "lucide-solid"
+                     ],
+    "registryDependencies":  [
+
+                             ],
+    "cssDependencies":  [
+                            "@solidcx/styles"
+                        ]
+}
