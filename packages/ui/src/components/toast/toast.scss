@@ -1,15 +1,15 @@
-.scn-toast-provider {
+﻿.scx-toast-provider {
   position: relative;
 }
 
-.scn-toast__viewport {
+.scx-toast__viewport {
   position: fixed;
   z-index: 200;
-  right: var(--scn-space-4);
-  bottom: var(--scn-space-4);
+  right: var(--scx-space-4);
+  bottom: var(--scx-space-4);
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-3);
+  gap: var(--scx-space-3);
   width: min(
     calc(100vw - 2rem),
     24rem
@@ -17,45 +17,45 @@
   pointer-events: none;
 }
 
-.scn-toast {
+.scx-toast {
   pointer-events: auto;
   display: flex;
   align-items: flex-start;
-  gap: var(--scn-space-3);
-  padding: var(--scn-space-4);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-md);
+  gap: var(--scx-space-3);
+  padding: var(--scx-space-4);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-md);
   box-shadow:
     0 10px 15px rgb(0 0 0 / 0.1),
     0 4px 6px rgb(0 0 0 / 0.08);
   animation:
-    scn-toast-in
-    var(--scn-duration-fast)
-    var(--scn-ease-standard);
+    scx-toast-in
+    var(--scx-duration-fast)
+    var(--scx-ease-standard);
 }
 
-.scn-toast__body {
+.scx-toast__body {
   flex: 1;
   min-width: 0;
 }
 
-.scn-toast__title {
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-semibold);
+.scx-toast__title {
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-semibold);
 }
 
-.scn-toast__description {
-  margin-top: var(--scn-space-1);
-  color: var(--scn-muted-foreground);
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
+.scx-toast__description {
+  margin-top: var(--scx-space-1);
+  color: var(--scx-muted-foreground);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
   line-height: 1.5;
 }
 
-.scn-toast__close {
+.scx-toast__close {
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
@@ -63,71 +63,71 @@
   width: 1.75rem;
   height: 1.75rem;
   background: transparent;
-  color: var(--scn-muted-foreground);
+  color: var(--scx-muted-foreground);
   border: 0;
-  border-radius: var(--scn-radius-sm);
+  border-radius: var(--scx-radius-sm);
   cursor: pointer;
 
   &:hover {
-    background: var(--scn-muted);
-    color: var(--scn-foreground);
+    background: var(--scx-muted);
+    color: var(--scx-foreground);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 }
 
 /* Success */
 
-.scn-toast--success {
+.scx-toast--success {
   background: color-mix(
     in srgb,
-    var(--scn-success) 10%,
-    var(--scn-background)
+    var(--scx-success) 10%,
+    var(--scx-background)
   );
 
-  border-color: var(--scn-success);
+  border-color: var(--scx-success);
 }
 
 /* Info */
 
-.scn-toast--info {
+.scx-toast--info {
   background: color-mix(
     in srgb,
-    var(--scn-ring) 10%,
-    var(--scn-background)
+    var(--scx-ring) 10%,
+    var(--scx-background)
   );
 
-  border-color: var(--scn-ring);
+  border-color: var(--scx-ring);
 }
 
 /* Warning */
 
-.scn-toast--warning {
+.scx-toast--warning {
   background: color-mix(
     in srgb,
-    var(--scn-warning) 10%,
-    var(--scn-background)
+    var(--scx-warning) 10%,
+    var(--scx-background)
   );
 
-  border-color: var(--scn-warning);
+  border-color: var(--scx-warning);
 }
 
 /* Danger */
 
-.scn-toast--danger {
+.scx-toast--danger {
   background: color-mix(
     in srgb,
-    var(--scn-destructive) 10%,
-    var(--scn-background)
+    var(--scx-destructive) 10%,
+    var(--scx-background)
   );
 
-  border-color: var(--scn-destructive);
+  border-color: var(--scx-destructive);
 }
 
-@keyframes scn-toast-in {
+@keyframes scx-toast-in {
   from {
     opacity: 0;
     transform: translateY(8px);
@@ -140,7 +140,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scn-toast {
+  .scx-toast {
     animation: none;
   }
 }

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createSignal,
@@ -59,12 +59,12 @@ export const Dialog: Component<DialogProps> = (
       value={{
         open,
         setOpen,
-        contentId: `scn-dialog-${id}`,
+        contentId: `scx-dialog-${id}`,
       }}
     >
       <div
         {...rest}
-        class={cx('scn-dialog', local.class)}
+        class={cx('scx-dialog', local.class)}
       >
         {local.children}
       </div>

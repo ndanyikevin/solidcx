@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import { splitProps } from 'solid-js'
 
 import { cx } from '@solidcx/cx'
@@ -31,7 +31,7 @@ export const DrawerTrigger: Component<
             aria-expanded={drawer.open()}
             aria-haspopup="dialog"
             class={cx(
-                'scn-drawer__trigger',
+                'scx-drawer__trigger',
                 local.class,
             )}
             onClick={() => {

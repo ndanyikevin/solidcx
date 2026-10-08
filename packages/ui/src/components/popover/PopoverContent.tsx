@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     Show,
     onCleanup,
@@ -61,7 +61,7 @@ export const PopoverContent: Component<
                 role="dialog"
                 tabindex="-1"
                 class={cx(
-                    'scn-popover__content',
+                    'scx-popover__content',
                     local.class,
                 )}
             >

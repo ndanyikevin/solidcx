@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     Show,
     splitProps,
@@ -45,7 +45,7 @@ export const AccordionContent: Component<
                     item.triggerId
                 }
                 class={cx(
-                    'scn-accordion__content',
+                    'scx-accordion__content',
                     local.class,
                 )}
             >

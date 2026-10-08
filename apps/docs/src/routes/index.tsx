@@ -1,4 +1,4 @@
-import { Title } from '@solidjs/meta'
+﻿import { Title } from '@solidjs/meta'
 import {
   Badge,
   Button,
@@ -8,13 +8,13 @@ import {
   Label,
   Radio,
   Textarea,
-} from '@solidcn/ui'
+} from '@solidcx/ui'
 
 export default function Home() {
   return (
     <main class="docs-page">
       <section class="hero">
-        <Badge>SolidCN UI</Badge>
+        <Badge>SolidCX UI</Badge>
 
         <h1>Build beautiful Solid apps.</h1>
 

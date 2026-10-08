@@ -1,92 +1,92 @@
-.scn-date-field {
+﻿.scx-date-field {
   display: inline-flex;
   flex-direction: column;
   width: fit-content;
 }
 
-.scn-date-field__control {
+.scx-date-field__control {
   display: inline-flex;
   align-items: center;
   min-height: 2.5rem;
-  padding: 0 var(--scn-space-2);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
-  border: 1px solid var(--scn-input);
-  border-radius: var(--scn-radius-md);
-  font-family: var(--scn-font-sans);
+  padding: 0 var(--scx-space-2);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
+  border: 1px solid var(--scx-input);
+  border-radius: var(--scx-radius-md);
+  font-family: var(--scx-font-sans);
   transition:
-    border-color var(--scn-duration-fast)
-      var(--scn-ease-standard),
-    box-shadow var(--scn-duration-fast)
-      var(--scn-ease-standard);
+    border-color var(--scx-duration-fast)
+      var(--scx-ease-standard),
+    box-shadow var(--scx-duration-fast)
+      var(--scx-ease-standard);
 }
 
-.scn-date-field__control:focus-within {
-  border-color: var(--scn-ring);
+.scx-date-field__control:focus-within {
+  border-color: var(--scx-ring);
   box-shadow:
     0 0 0 2px
     color-mix(
       in srgb,
-      var(--scn-ring) 20%,
+      var(--scx-ring) 20%,
       transparent
     );
 }
 
-.scn-date-field__segment {
+.scx-date-field__segment {
   width: 2.25rem;
-  padding: var(--scn-space-1)
-    var(--scn-space-1);
+  padding: var(--scx-space-1)
+    var(--scx-space-1);
   background: transparent;
-  color: var(--scn-foreground);
+  color: var(--scx-foreground);
   border: 0;
   outline: 0;
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
   font-variant-numeric: tabular-nums;
   text-align: center;
 }
 
-.scn-date-field__segment--year {
+.scx-date-field__segment--year {
   width: 4.25rem;
 }
 
-.scn-date-field__segment::placeholder {
-  color: var(--scn-muted-foreground);
+.scx-date-field__segment::placeholder {
+  color: var(--scx-muted-foreground);
   opacity: 0.7;
 }
 
-.scn-date-field__separator {
-  color: var(--scn-muted-foreground);
+.scx-date-field__separator {
+  color: var(--scx-muted-foreground);
   user-select: none;
 }
 
-.scn-date-field--invalid
-  .scn-date-field__control {
-  border-color: var(--scn-destructive);
+.scx-date-field--invalid
+  .scx-date-field__control {
+  border-color: var(--scx-destructive);
 }
 
-.scn-date-field--invalid
-  .scn-date-field__control:focus-within {
+.scx-date-field--invalid
+  .scx-date-field__control:focus-within {
   box-shadow:
     0 0 0 2px
     color-mix(
       in srgb,
-      var(--scn-destructive) 20%,
+      var(--scx-destructive) 20%,
       transparent
     );
 }
 
-.scn-date-field--disabled {
+.scx-date-field--disabled {
   opacity: 0.5;
 }
 
-.scn-date-field--disabled
-  .scn-date-field__control {
+.scx-date-field--disabled
+  .scx-date-field__control {
   cursor: not-allowed;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scn-date-field__control {
+  .scx-date-field__control {
     transition: none;
   }
 }

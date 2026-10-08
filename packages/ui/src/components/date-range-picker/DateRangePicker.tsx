@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createMemo,
   createSignal,
@@ -271,13 +271,13 @@ export const DateRangePicker: Component<
     <div
       {...rest}
       class={cx(
-        'scn-date-range-picker',
+        'scx-date-range-picker',
         local.class,
       )}
     >
       <button
         type="button"
-        class="scn-date-range-picker__trigger"
+        class="scx-date-range-picker__trigger"
         disabled={local.disabledField}
         aria-haspopup="dialog"
         aria-expanded={open()}
@@ -287,14 +287,14 @@ export const DateRangePicker: Component<
           size={16}
           strokeWidth={2}
           aria-hidden="true"
-          class="scn-date-range-picker__icon"
+          class="scx-date-range-picker__icon"
         />
 
         <span
           class={cx(
-            'scn-date-range-picker__value',
+            'scx-date-range-picker__value',
             !range().start &&
-            'scn-date-range-picker__value--placeholder',
+            'scx-date-range-picker__value--placeholder',
           )}
         >
           {displayValue()}
@@ -310,7 +310,7 @@ export const DateRangePicker: Component<
             role="button"
             tabindex="0"
             aria-label="Clear date range"
-            class="scn-date-range-picker__clear"
+            class="scx-date-range-picker__clear"
             onClick={clearRange}
             onKeyDown={(event) => {
               if (
@@ -336,23 +336,23 @@ export const DateRangePicker: Component<
           size={16}
           strokeWidth={2}
           aria-hidden="true"
-          class="scn-date-range-picker__chevron"
+          class="scx-date-range-picker__chevron"
         />
       </button>
 
       <Show when={open()}>
         <div
-          class="scn-date-range-picker__popover"
+          class="scx-date-range-picker__popover"
           role="dialog"
           aria-label="Choose date range"
         >
-          <div class="scn-date-range-picker__header">
+          <div class="scx-date-range-picker__header">
             <div>
-              <div class="scn-date-range-picker__title">
+              <div class="scx-date-range-picker__title">
                 Select date range
               </div>
 
-              <div class="scn-date-range-picker__hint">
+              <div class="scx-date-range-picker__hint">
                 {selecting() === 'start'
                   ? 'Choose a start date'
                   : 'Choose an end date'}
@@ -374,10 +374,10 @@ export const DateRangePicker: Component<
             onSelect={selectDate}
           />
 
-          <div class="scn-date-range-picker__footer">
+          <div class="scx-date-range-picker__footer">
             <button
               type="button"
-              class="scn-date-range-picker__cancel"
+              class="scx-date-range-picker__cancel"
               onClick={closePicker}
             >
               Cancel
@@ -385,7 +385,7 @@ export const DateRangePicker: Component<
 
             <button
               type="button"
-              class="scn-date-range-picker__done"
+              class="scx-date-range-picker__done"
               disabled={
                 !draftStart() ||
                 !draftEnd()

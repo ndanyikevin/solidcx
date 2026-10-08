@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createSignal,
@@ -100,7 +100,7 @@ export const Collapsible: Component<
             : undefined
         }
         class={cx(
-          'scn-collapsible',
+          'scx-collapsible',
           local.class,
         )}
       >
@@ -147,7 +147,7 @@ export const CollapsibleTrigger: Component<
           : 'closed'
       }
       class={cx(
-        'scn-collapsible__trigger',
+        'scx-collapsible__trigger',
         local.class,
       )}
       onClick={() =>
@@ -189,7 +189,7 @@ export const CollapsibleContent: Component<
         !collapsible.open()
       }
       class={cx(
-        'scn-collapsible__content',
+        'scx-collapsible__content',
         local.class,
       )}
     >

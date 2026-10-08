@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createEffect,
@@ -222,7 +222,7 @@ export const SheetTrigger: Component<
       ref={buttonRef}
       type="button"
       class={cx(
-        'scn-sheet__trigger',
+        'scx-sheet__trigger',
         local.class,
       )}
       disabled={local.disabled}
@@ -280,9 +280,9 @@ export const SheetContent: Component<
       <Portal>
         <div
           class={cx(
-            'scn-sheet__overlay',
+            'scx-sheet__overlay',
             sheet.modal() &&
-            'scn-sheet__overlay--modal',
+            'scx-sheet__overlay--modal',
           )}
           onClick={handleOverlayClick}
         >
@@ -295,8 +295,8 @@ export const SheetContent: Component<
               sheet.modal() || undefined
             }
             class={cx(
-              'scn-sheet',
-              `scn-sheet--${local.side ?? 'right'}`,
+              'scx-sheet',
+              `scx-sheet--${local.side ?? 'right'}`,
               local.class,
             )}
           >
@@ -325,7 +325,7 @@ export const SheetHeader: Component<
     <div
       {...rest}
       class={cx(
-        'scn-sheet__header',
+        'scx-sheet__header',
         local.class,
       )}
     >
@@ -351,7 +351,7 @@ export const SheetFooter: Component<
     <div
       {...rest}
       class={cx(
-        'scn-sheet__footer',
+        'scx-sheet__footer',
         local.class,
       )}
     >
@@ -377,7 +377,7 @@ export const SheetTitle: Component<
     <h2
       {...rest}
       class={cx(
-        'scn-sheet__title',
+        'scx-sheet__title',
         local.class,
       )}
     >
@@ -403,7 +403,7 @@ export const SheetDescription: Component<
     <p
       {...rest}
       class={cx(
-        'scn-sheet__description',
+        'scx-sheet__description',
         local.class,
       )}
     >
@@ -433,7 +433,7 @@ export const SheetClose: Component<
       {...rest}
       type="button"
       class={cx(
-        'scn-sheet__close',
+        'scx-sheet__close',
         local.class,
       )}
       disabled={local.disabled}

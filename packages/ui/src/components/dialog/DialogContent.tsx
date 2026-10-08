@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     Show,
     onCleanup,
@@ -78,7 +78,7 @@ export const DialogContent: Component<
 
     return (
         <Show when={dialog.open()}>
-            <div class="scn-dialog__overlay">
+            <div class="scx-dialog__overlay">
                 <div
                     {...rest}
                     ref={contentRef}
@@ -87,7 +87,7 @@ export const DialogContent: Component<
                     aria-modal="true"
                     tabindex="-1"
                     class={cx(
-                        'scn-dialog__content',
+                        'scx-dialog__content',
                         local.class,
                     )}
                 >

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { Show, splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -28,7 +28,7 @@ export const TooltipContent: Component<
                 id={tooltip.contentId}
                 role="tooltip"
                 class={cx(
-                    'scn-tooltip__content',
+                    'scx-tooltip__content',
                     local.class,
                 )}
             >

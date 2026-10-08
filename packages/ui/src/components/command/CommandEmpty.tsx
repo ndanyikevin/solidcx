@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { Show, splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -39,7 +39,7 @@ export const CommandEmpty: Component<
             <div
                 {...rest}
                 class={cx(
-                    'scn-command__empty',
+                    'scx-command__empty',
                     local.class,
                 )}
             >

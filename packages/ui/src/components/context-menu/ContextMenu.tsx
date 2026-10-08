@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
   createSignal,
@@ -99,7 +99,7 @@ export const ContextMenu: Component<
 
     if (
       target.closest(
-        '[data-scn-context-menu-content]',
+        '[data-scx-context-menu-content]',
       )
     ) {
       return

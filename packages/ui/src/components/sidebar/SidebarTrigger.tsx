@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import {
     splitProps,
 } from 'solid-js'
@@ -40,7 +40,7 @@ export const SidebarTrigger: Component<
                 'Toggle sidebar'
             }
             class={cx(
-                'scn-sidebar__trigger',
+                'scx-sidebar__trigger',
                 local.class,
             )}
             onClick={() => {

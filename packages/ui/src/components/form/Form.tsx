@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -19,7 +19,7 @@ export const Form: Component<FormProps> = (props) => {
     <form
       {...rest}
       class={cx(
-        'scn-form',
+        'scx-form',
         local.class,
       )}
     >

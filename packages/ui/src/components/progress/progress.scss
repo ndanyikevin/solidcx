@@ -1,27 +1,27 @@
-.scn-progress {
+﻿.scx-progress {
   width: 100%;
 }
 
-.scn-progress__track {
+.scx-progress__track {
   width: 100%;
   height: 0.5rem;
   overflow: hidden;
   border-radius: 999px;
-  background: var(--scn-muted);
+  background: var(--scx-muted);
 }
 
-.scn-progress__indicator {
+.scx-progress__indicator {
   height: 100%;
   border-radius: inherit;
-  background: var(--scn-primary);
+  background: var(--scx-primary);
   transition:
     width
-    var(--scn-duration-normal)
-    var(--scn-ease-standard);
+    var(--scx-duration-normal)
+    var(--scx-ease-standard);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scn-progress__indicator {
+  .scx-progress__indicator {
     transition: none;
   }
 }

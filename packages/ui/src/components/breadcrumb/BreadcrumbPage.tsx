@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -24,7 +24,7 @@ export const BreadcrumbPage: Component<
             aria-current="page"
             aria-disabled="true"
             class={cx(
-                'scn-breadcrumb__page',
+                'scx-breadcrumb__page',
                 local.class,
             )}
         >

@@ -1,4 +1,4 @@
-
+﻿
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { ChevronLeft } from 'lucide-solid'
@@ -25,7 +25,7 @@ export const PaginationPrevious: Component<
       type="button"
       aria-label="Go to previous page"
       class={cx(
-        'scn-pagination__previous',
+        'scx-pagination__previous',
         local.class,
       )}
     >
@@ -33,7 +33,7 @@ export const PaginationPrevious: Component<
         size={16}
         strokeWidth={2}
         aria-hidden="true"
-        class="scn-pagination__arrow"
+        class="scx-pagination__arrow"
       />
 
       <span>

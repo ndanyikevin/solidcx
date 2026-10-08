@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createEffect,
   createMemo,
@@ -384,13 +384,13 @@ export const Combobox: Component<
       {...rest}
       ref={rootRef}
       class={cx(
-        'scn-combobox',
+        'scx-combobox',
         local.class,
       )}
     >
       <button
         type="button"
-        class="scn-combobox__trigger"
+        class="scx-combobox__trigger"
         disabled={local.disabled}
         aria-haspopup="listbox"
         aria-expanded={open()}
@@ -404,9 +404,9 @@ export const Combobox: Component<
       >
         <span
           class={cx(
-            'scn-combobox__value',
+            'scx-combobox__value',
             !selectedOption() &&
-            'scn-combobox__value--placeholder',
+            'scx-combobox__value--placeholder',
           )}
         >
           {selectedOption()
@@ -425,7 +425,7 @@ export const Combobox: Component<
             role="button"
             tabindex="0"
             aria-label="Clear selection"
-            class="scn-combobox__clear"
+            class="scx-combobox__clear"
             onClick={clearValue}
             onKeyDown={(event) => {
               if (
@@ -453,31 +453,31 @@ export const Combobox: Component<
           strokeWidth={2}
           aria-hidden="true"
           class={cx(
-            'scn-combobox__chevron',
+            'scx-combobox__chevron',
             open() &&
-            'scn-combobox__chevron--open',
+            'scx-combobox__chevron--open',
           )}
         />
       </button>
 
       <Show when={open()}>
         <div
-          class="scn-combobox__popover"
+          class="scx-combobox__popover"
           role="listbox"
           aria-label="Options"
         >
-          <div class="scn-combobox__search-wrapper">
+          <div class="scx-combobox__search-wrapper">
             <Search
               size={16}
               strokeWidth={2}
               aria-hidden="true"
-              class="scn-combobox__search-icon"
+              class="scx-combobox__search-icon"
             />
 
             <input
               ref={inputRef}
               type="text"
-              class="scn-combobox__search"
+              class="scx-combobox__search"
               placeholder={
                 local.searchPlaceholder ??
                 'Search...'
@@ -506,14 +506,14 @@ export const Combobox: Component<
             />
           </div>
 
-          <div class="scn-combobox__options">
+          <div class="scx-combobox__options">
             <Show
               when={
                 filteredOptions()
                   .length > 0
               }
               fallback={
-                <div class="scn-combobox__empty">
+                <div class="scx-combobox__empty">
                   No results found.
                 </div>
               }
@@ -533,15 +533,15 @@ export const Combobox: Component<
                       option.value
                     }
                     class={cx(
-                      'scn-combobox__option',
+                      'scx-combobox__option',
                       highlightedIndex() ===
                       index() &&
-                      'scn-combobox__option--highlighted',
+                      'scx-combobox__option--highlighted',
                       selectedValue() ===
                       option.value &&
-                      'scn-combobox__option--selected',
+                      'scx-combobox__option--selected',
                       option.disabled &&
-                      'scn-combobox__option--disabled',
+                      'scx-combobox__option--disabled',
                     )}
                     onMouseEnter={() =>
                       setHighlightedIndex(

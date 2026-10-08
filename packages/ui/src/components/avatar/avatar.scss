@@ -1,4 +1,4 @@
-.scn-avatar {
+﻿.scx-avatar {
   position: relative;
 
   display: inline-flex;
@@ -8,38 +8,38 @@
   flex-shrink: 0;
   overflow: hidden;
 
-  background: var(--scn-muted);
-  color: var(--scn-muted-foreground);
+  background: var(--scx-muted);
+  color: var(--scx-muted-foreground);
 
-  border-radius: var(--scn-radius-full);
+  border-radius: var(--scx-radius-full);
 
-  font-family: var(--scn-font-sans);
-  font-weight: var(--scn-weight-semibold);
+  font-family: var(--scx-font-sans);
+  font-weight: var(--scx-weight-semibold);
 
   user-select: none;
 
   &--sm {
     width: 2rem;
     height: 2rem;
-    font-size: var(--scn-text-xs);
+    font-size: var(--scx-text-xs);
   }
 
   &--md {
     width: 2.5rem;
     height: 2.5rem;
-    font-size: var(--scn-text-sm);
+    font-size: var(--scx-text-sm);
   }
 
   &--lg {
     width: 3rem;
     height: 3rem;
-    font-size: var(--scn-text-base);
+    font-size: var(--scx-text-base);
   }
 
   &--xl {
     width: 4rem;
     height: 4rem;
-    font-size: var(--scn-text-lg);
+    font-size: var(--scx-text-lg);
   }
 
   &__image {

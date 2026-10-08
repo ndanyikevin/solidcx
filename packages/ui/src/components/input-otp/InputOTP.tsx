@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createMemo,
   createSignal,
@@ -180,24 +180,24 @@ export const InputOTP: Component<InputOTPProps> = (props) => {
   return (
     <div
       class={cx(
-        'scn-input-otp',
-        local.disabled && 'scn-input-otp--disabled',
+        'scx-input-otp',
+        local.disabled && 'scx-input-otp--disabled',
         local.class,
       )}
     >
-      <div class="scn-input-otp__slots" aria-hidden="true">
+      <div class="scx-input-otp__slots" aria-hidden="true">
         <For each={slots()}>
           {(slot) => (
             <div
               class={cx(
-                'scn-input-otp__slot',
-                slot.character && 'scn-input-otp__slot--filled',
-                slot.active && 'scn-input-otp__slot--active',
+                'scx-input-otp__slot',
+                slot.character && 'scx-input-otp__slot--filled',
+                slot.active && 'scx-input-otp__slot--active',
               )}
             >
               {slot.display}
               {slot.active && !slot.character && (
-                <span class="scn-input-otp__caret" />
+                <span class="scx-input-otp__caret" />
               )}
             </div>
           )}
@@ -207,7 +207,7 @@ export const InputOTP: Component<InputOTPProps> = (props) => {
       <input
         {...rest}
         ref={inputRef}
-        class="scn-input-otp__input"
+        class="scx-input-otp__input"
         type="text"
         inputmode="numeric"
         autocomplete="one-time-code"

@@ -1,55 +1,55 @@
-.scn-tabs {
+﻿.scx-tabs {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-4);
+  gap: var(--scx-space-4);
   width: 100%;
 }
 
-.scn-tabs__list {
+.scx-tabs__list {
   display: inline-flex;
   align-items: center;
-  gap: var(--scn-space-1);
+  gap: var(--scx-space-1);
 
   width: fit-content;
-  padding: var(--scn-space-1);
+  padding: var(--scx-space-1);
 
-  background: var(--scn-muted);
+  background: var(--scx-muted);
 
-  border-radius: var(--scn-radius-md);
+  border-radius: var(--scx-radius-md);
 }
 
-.scn-tabs__trigger {
+.scx-tabs__trigger {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   min-height: 2.25rem;
-  padding: 0 var(--scn-space-4);
+  padding: 0 var(--scx-space-4);
 
   background: transparent;
-  color: var(--scn-muted-foreground);
+  color: var(--scx-muted-foreground);
 
   border: 0;
-  border-radius: var(--scn-radius-sm);
+  border-radius: var(--scx-radius-sm);
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-medium);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-medium);
 
   cursor: pointer;
 
   transition:
-    background-color var(--scn-duration-normal)
-      var(--scn-ease-standard),
-    color var(--scn-duration-normal)
-      var(--scn-ease-standard);
+    background-color var(--scx-duration-normal)
+      var(--scx-ease-standard),
+    color var(--scx-duration-normal)
+      var(--scx-ease-standard);
 
   &:hover:not(:disabled) {
-    color: var(--scn-foreground);
+    color: var(--scx-foreground);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 
@@ -59,18 +59,18 @@
   }
 
   &--active {
-    background: var(--scn-background);
-    color: var(--scn-foreground);
+    background: var(--scx-background);
+    color: var(--scx-foreground);
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
   }
 }
 
-.scn-tabs__content {
+.scx-tabs__content {
   width: 100%;
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 4px;
-    border-radius: var(--scn-radius-sm);
+    border-radius: var(--scx-radius-sm);
   }
 }

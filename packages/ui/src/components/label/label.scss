@@ -1,13 +1,13 @@
-.scn-label {
+﻿.scx-label {
   display: inline-flex;
   align-items: center;
 
-  color: var(--scn-foreground);
+  color: var(--scx-foreground);
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-medium);
-  line-height: var(--scn-leading-normal);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-medium);
+  line-height: var(--scx-leading-normal);
 
   user-select: none;
 }

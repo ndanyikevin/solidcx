@@ -1,19 +1,19 @@
-.scn-alert {
+﻿.scx-alert {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-1);
+  gap: var(--scx-space-1);
 
   width: 100%;
-  padding: var(--scn-space-4);
+  padding: var(--scx-space-4);
 
   border: 1px solid transparent;
-  border-radius: var(--scn-radius-lg);
+  border-radius: var(--scx-radius-lg);
 
-  font-size: var(--scn-text-sm);
-  line-height: var(--scn-leading-normal);
+  font-size: var(--scx-text-sm);
+  line-height: var(--scx-leading-normal);
 
   &__title {
-    font-weight: var(--scn-weight-semibold);
+    font-weight: var(--scx-weight-semibold);
   }
 
   &__content {
@@ -21,41 +21,41 @@
   }
 
   &--default {
-    background: var(--scn-muted);
-    color: var(--scn-foreground);
-    border-color: var(--scn-border);
+    background: var(--scx-muted);
+    color: var(--scx-foreground);
+    border-color: var(--scx-border);
   }
 
   &--success {
     background: color-mix(
       in srgb,
-      var(--scn-success) 12%,
-      var(--scn-background)
+      var(--scx-success) 12%,
+      var(--scx-background)
     );
 
-    color: var(--scn-foreground);
-    border-color: var(--scn-success);
+    color: var(--scx-foreground);
+    border-color: var(--scx-success);
   }
 
   &--warning {
     background: color-mix(
       in srgb,
-      var(--scn-warning) 12%,
-      var(--scn-background)
+      var(--scx-warning) 12%,
+      var(--scx-background)
     );
 
-    color: var(--scn-foreground);
-    border-color: var(--scn-warning);
+    color: var(--scx-foreground);
+    border-color: var(--scx-warning);
   }
 
   &--danger {
     background: color-mix(
       in srgb,
-      var(--scn-destructive) 12%,
-      var(--scn-background)
+      var(--scx-destructive) 12%,
+      var(--scx-background)
     );
 
-    color: var(--scn-foreground);
-    border-color: var(--scn-destructive);
+    color: var(--scx-foreground);
+    border-color: var(--scx-destructive);
   }
 }

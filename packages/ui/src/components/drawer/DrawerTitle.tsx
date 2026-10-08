@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import { splitProps } from 'solid-js'
 
 import { cx } from '@solidcx/cx'
@@ -19,7 +19,7 @@ export const DrawerTitle: Component<
         <h2
             {...rest}
             class={cx(
-                'scn-drawer__title',
+                'scx-drawer__title',
                 local.class,
             )}
         >

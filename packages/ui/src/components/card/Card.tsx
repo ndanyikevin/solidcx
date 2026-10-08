@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -18,7 +18,7 @@ export const Card: Component<CardProps> = (props) => {
     return (
         <div
             {...rest}
-            class={cx('scn-card', local.class)}
+            class={cx('scx-card', local.class)}
         >
             {local.children}
         </div>

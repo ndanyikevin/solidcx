@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import {
     createSignal,
     onCleanup,
@@ -119,7 +119,7 @@ export const Drawer: Component<
                 }
                 data-side={side()}
                 class={cx(
-                    'scn-drawer',
+                    'scx-drawer',
                     local.class,
                 )}
             >

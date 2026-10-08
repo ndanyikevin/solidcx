@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   For,
   Show,
@@ -68,7 +68,7 @@ export const ToastProvider: Component<
   const toast = (
     options: ToastOptions,
   ) => {
-    const id = `scn-toast-${++toastCounter}`
+    const id = `scx-toast-${++toastCounter}`
 
     const item: ToastData = {
       id,
@@ -102,7 +102,7 @@ export const ToastProvider: Component<
       <div
         {...rest}
         class={cx(
-          'scn-toast-provider',
+          'scx-toast-provider',
           local.class,
         )}
       >

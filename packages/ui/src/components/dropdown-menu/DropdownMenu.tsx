@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createSignal,
@@ -59,13 +59,13 @@ export const DropdownMenu: Component<
       value={{
         open,
         setOpen,
-        contentId: `scn-dropdown-menu-${id}`,
+        contentId: `scx-dropdown-menu-${id}`,
       }}
     >
       <div
         {...rest}
         class={cx(
-          'scn-dropdown-menu',
+          'scx-dropdown-menu',
           local.class,
         )}
       >

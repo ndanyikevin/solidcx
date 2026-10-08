@@ -1,4 +1,4 @@
-
+﻿
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { ChevronRight } from 'lucide-solid'
@@ -25,7 +25,7 @@ export const PaginationNext: Component<
       type="button"
       aria-label="Go to next page"
       class={cx(
-        'scn-pagination__next',
+        'scx-pagination__next',
         local.class,
       )}
     >
@@ -37,7 +37,7 @@ export const PaginationNext: Component<
         size={16}
         strokeWidth={2}
         aria-hidden="true"
-        class="scn-pagination__arrow"
+        class="scx-pagination__arrow"
       />
     </button>
   )

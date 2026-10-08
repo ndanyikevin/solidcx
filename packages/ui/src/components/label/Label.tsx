@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -18,7 +18,7 @@ export const Label: Component<LabelProps> = (props) => {
     return (
         <label
             {...rest}
-            class={cx('scn-label', local.class)}
+            class={cx('scx-label', local.class)}
         >
             {local.children}
         </label>

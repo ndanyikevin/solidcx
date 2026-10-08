@@ -1,9 +1,9 @@
-:root {
-  --scn-duration-fast: 100ms;
-  --scn-duration-normal: 150ms;
-  --scn-duration-slow: 250ms;
+﻿:root {
+  --scx-duration-fast: 100ms;
+  --scx-duration-normal: 150ms;
+  --scx-duration-slow: 250ms;
 
-  --scn-ease-standard: cubic-bezier(0.2, 0, 0, 1);
-  --scn-ease-in: cubic-bezier(0.4, 0, 1, 1);
-  --scn-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --scx-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --scx-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --scx-ease-out: cubic-bezier(0, 0, 0.2, 1);
 }

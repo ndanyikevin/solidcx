@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createEffect,
@@ -172,7 +172,7 @@ export const Confirmation: Component<
     >
       <Show when={isOpen()}>
         <div
-          class="scn-confirmation__overlay"
+          class="scx-confirmation__overlay"
           onClick={handleOverlayClick}
         >
           <div
@@ -180,8 +180,8 @@ export const Confirmation: Component<
             role="alertdialog"
             aria-modal="true"
             class={cx(
-              'scn-confirmation',
-              `scn-confirmation--${local.variant ?? 'default'}`,
+              'scx-confirmation',
+              `scx-confirmation--${local.variant ?? 'default'}`,
               local.class,
             )}
           >

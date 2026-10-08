@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -19,7 +19,7 @@ export const Switch: Component<SwitchProps> = (props) => {
             {...rest}
             type="checkbox"
             role="switch"
-            class={cx('scn-switch', local.class)}
+            class={cx('scx-switch', local.class)}
         />
     )
 }

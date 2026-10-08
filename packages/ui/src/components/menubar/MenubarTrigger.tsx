@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
     splitProps,
@@ -30,7 +30,7 @@ export const MenubarTrigger: Component<
     const getMenus = () => {
         const current =
             document.querySelector(
-                `[data-scn-menubar-menu][data-menu-id="${menu.id}"]`,
+                `[data-scx-menubar-menu][data-menu-id="${menu.id}"]`,
             )
 
         const menubarElement =
@@ -44,7 +44,7 @@ export const MenubarTrigger: Component<
 
         return Array.from(
             menubarElement.querySelectorAll<HTMLElement>(
-                '[data-scn-menubar-menu]',
+                '[data-scx-menubar-menu]',
             ),
         )
     }
@@ -66,7 +66,7 @@ export const MenubarTrigger: Component<
             menus[
                 normalized
             ].querySelector<HTMLButtonElement>(
-                '[data-scn-menubar-trigger]',
+                '[data-scx-menubar-trigger]',
             )
 
         trigger?.focus()
@@ -131,7 +131,7 @@ export const MenubarTrigger: Component<
                 requestAnimationFrame(() => {
                     const current =
                         document.querySelector(
-                            `[data-scn-menubar-menu][data-menu-id="${menu.id}"]`,
+                            `[data-scx-menubar-menu][data-menu-id="${menu.id}"]`,
                         )
 
                     current
@@ -182,11 +182,11 @@ export const MenubarTrigger: Component<
             {...rest}
             type="button"
             disabled={local.disabled}
-            data-scn-menubar-trigger
+            data-scx-menubar-trigger
             aria-haspopup="menu"
             aria-expanded={menu.open()}
             class={cx(
-                'scn-menubar__trigger',
+                'scx-menubar__trigger',
                 local.class,
             )}
             onClick={handleClick}

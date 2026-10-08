@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -22,8 +22,8 @@ export const Select: Component<SelectProps> = (props) => {
         <select
             {...rest}
             class={cx(
-                'scn-select',
-                `scn-select--${local.variant ?? 'default'}`,
+                'scx-select',
+                `scx-select--${local.variant ?? 'default'}`,
                 local.class,
             )}
         />

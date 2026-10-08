@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -33,8 +33,8 @@ export const Callout: Component<CalloutProps> = (
     <div
       {...rest}
       class={cx(
-        'scn-callout',
-        `scn-callout--${variant()}`,
+        'scx-callout',
+        `scx-callout--${variant()}`,
         local.class,
       )}
     >

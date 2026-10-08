@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -29,7 +29,7 @@ export const ConfirmationCancel: Component<
             {...rest}
             type="button"
             class={cx(
-                'scn-confirmation__cancel',
+                'scx-confirmation__cancel',
                 local.class,
             )}
             disabled={

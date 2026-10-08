@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createMemo,
   splitProps,
@@ -56,7 +56,7 @@ export const Progress: Component<
     <div
       {...rest}
       class={cx(
-        'scn-progress',
+        'scx-progress',
         local.class,
       )}
       role="progressbar"
@@ -66,10 +66,10 @@ export const Progress: Component<
       aria-label={local.label}
     >
       <div
-        class="scn-progress__track"
+        class="scx-progress__track"
       >
         <div
-          class="scn-progress__indicator"
+          class="scx-progress__indicator"
           style={{
             width: `${percentage()}%`,
           }}

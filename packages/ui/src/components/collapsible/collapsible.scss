@@ -1,37 +1,37 @@
-.scn-collapsible {
+﻿.scx-collapsible {
   width: 100%;
 }
 
-.scn-collapsible__trigger {
+.scx-collapsible__trigger {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
   width: 100%;
   min-height: 2.5rem;
   padding:
-    var(--scn-space-2)
-    var(--scn-space-3);
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-md);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
+    var(--scx-space-2)
+    var(--scx-space-3);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-md);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
   font: inherit;
-  font-size: var(--scn-font-size-sm);
+  font-size: var(--scx-font-size-sm);
   font-weight: 500;
   text-align: left;
   cursor: pointer;
   transition:
     background
-    var(--scn-duration-fast)
-    var(--scn-ease-standard);
+    var(--scx-duration-fast)
+    var(--scx-ease-standard);
 
   &:hover {
-    background: var(--scn-muted);
+    background: var(--scx-muted);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 
@@ -41,14 +41,14 @@
   }
 }
 
-.scn-collapsible__content {
-  margin-top: var(--scn-space-2);
+.scx-collapsible__content {
+  margin-top: var(--scx-space-2);
   padding:
-    var(--scn-space-3)
-    var(--scn-space-4);
-  border-left: 2px solid var(--scn-border);
-  color: var(--scn-muted-foreground);
-  font-size: var(--scn-font-size-sm);
+    var(--scx-space-3)
+    var(--scx-space-4);
+  border-left: 2px solid var(--scx-border);
+  color: var(--scx-muted-foreground);
+  font-size: var(--scx-font-size-sm);
   line-height: 1.5;
 
   &[hidden] {

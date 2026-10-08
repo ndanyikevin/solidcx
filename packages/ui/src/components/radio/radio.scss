@@ -1,4 +1,4 @@
-.scn-radio {
+﻿.scx-radio {
   appearance: none;
 
   display: inline-grid;
@@ -8,17 +8,17 @@
   height: 1rem;
   margin: 0;
 
-  background: var(--scn-background);
+  background: var(--scx-background);
 
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-full);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-full);
 
   cursor: pointer;
 
   transition:
-    background-color var(--scn-duration-normal) var(--scn-ease-standard),
-    border-color var(--scn-duration-normal) var(--scn-ease-standard),
-    box-shadow var(--scn-duration-normal) var(--scn-ease-standard);
+    background-color var(--scx-duration-normal) var(--scx-ease-standard),
+    border-color var(--scx-duration-normal) var(--scx-ease-standard),
+    box-shadow var(--scx-duration-normal) var(--scx-ease-standard);
 
   &::before {
     content: '';
@@ -26,26 +26,26 @@
     width: 0.5rem;
     height: 0.5rem;
 
-    border-radius: var(--scn-radius-full);
+    border-radius: var(--scx-radius-full);
 
-    background: var(--scn-primary);
+    background: var(--scx-primary);
 
     transform: scale(0);
 
-    transition: transform var(--scn-duration-fast) var(--scn-ease-standard);
+    transition: transform var(--scx-duration-fast) var(--scx-ease-standard);
   }
 
   &:hover:not(:disabled) {
-    border-color: var(--scn-primary);
+    border-color: var(--scx-primary);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 
   &:checked {
-    border-color: var(--scn-primary);
+    border-color: var(--scx-primary);
 
     &::before {
       transform: scale(1);

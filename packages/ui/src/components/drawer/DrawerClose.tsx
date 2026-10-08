@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import { splitProps } from 'solid-js'
 
 import { cx } from '@solidcx/cx'
@@ -29,7 +29,7 @@ export const DrawerClose: Component<
             type="button"
             disabled={local.disabled}
             class={cx(
-                'scn-drawer__close',
+                'scx-drawer__close',
                 local.class,
             )}
             onClick={() => {

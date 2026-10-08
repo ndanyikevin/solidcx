@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -24,12 +24,12 @@ export const CommandGroup: Component<
             {...rest}
             role="group"
             class={cx(
-                'scn-command__group',
+                'scx-command__group',
                 local.class,
             )}
         >
             {local.heading && (
-                <div class="scn-command__group-heading">
+                <div class="scx-command__group-heading">
                     {local.heading}
                 </div>
             )}

@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
     createEffect,
@@ -49,7 +49,7 @@ export const MenubarContent: Component<
 
         const trigger =
             document.querySelector<HTMLElement>(
-                `[data-scn-menubar-menu][data-menu-id="${menu.id}"] [data-scn-menubar-trigger]`,
+                `[data-scx-menubar-menu][data-menu-id="${menu.id}"] [data-scx-menubar-trigger]`,
             )
 
         if (!trigger) {
@@ -192,7 +192,7 @@ export const MenubarContent: Component<
                 requestAnimationFrame(() => {
                     const trigger =
                         document.querySelector<HTMLButtonElement>(
-                            `[data-scn-menubar-menu][data-menu-id="${menu.id}"] [data-scn-menubar-trigger]`,
+                            `[data-scx-menubar-menu][data-menu-id="${menu.id}"] [data-scx-menubar-trigger]`,
                         )
 
                     trigger?.focus()
@@ -207,7 +207,7 @@ export const MenubarContent: Component<
                 const menus =
                     Array.from(
                         document.querySelectorAll<HTMLElement>(
-                            '[data-scn-menubar-menu]',
+                            '[data-scx-menubar-menu]',
                         ),
                     )
 
@@ -236,7 +236,7 @@ export const MenubarContent: Component<
 
                 const nextTrigger =
                     nextMenu?.querySelector<HTMLButtonElement>(
-                        '[data-scn-menubar-trigger]',
+                        '[data-scx-menubar-trigger]',
                     )
 
                 if (nextTrigger) {
@@ -323,10 +323,10 @@ export const MenubarContent: Component<
                 role="menu"
                 tabindex="-1"
                 aria-orientation="vertical"
-                data-scn-menubar-content
+                data-scx-menubar-content
                 data-state="open"
                 class={cx(
-                    'scn-menubar__content',
+                    'scx-menubar__content',
                     local.class,
                 )}
                 style={{

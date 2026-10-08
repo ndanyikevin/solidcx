@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     For,
     Show,
@@ -137,7 +137,7 @@ export const DropdownMenuContent: Component<
                 role="menu"
                 tabindex="-1"
                 class={cx(
-                    'scn-dropdown-menu__content',
+                    'scx-dropdown-menu__content',
                     local.class,
                 )}
                 onKeyDown={handleKeyDown}

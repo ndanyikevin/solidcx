@@ -1,12 +1,12 @@
-# SolidCN
+﻿# SolidCX
 
 A SolidJS component library built with **Sass**, **semantic design tokens**, and **native web primitives**.
 
-SolidCN is inspired by the philosophy of [shadcn/ui]: components are designed to be understandable, composable, accessible, and eventually distributed as source code through a registry.
+SolidCX is inspired by the philosophy of [shadcn/ui]: components are designed to be understandable, composable, accessible, and eventually distributed as source code through a registry.
 
 ## Philosophy
 
-SolidCN is built around a simple idea:
+SolidCX is built around a simple idea:
 
 ```text
 Raw palettes
@@ -25,18 +25,18 @@ Components should depend on semantic tokens rather than hardcoded colors.
 For example:
 
 ```scss
-background: var(--scn-primary);
-color: var(--scn-primary-foreground);
-border-color: var(--scn-border);
+background: var(--scx-primary);
+color: var(--scx-primary-foreground);
+border-color: var(--scx-border);
 ```
 
 rather than directly using palette values.
 
 The goal is to make the design system configurable without rewriting individual components.
 
-## Why SolidCN?
+## Why SolidCX?
 
-SolidCN is designed specifically for SolidJS.
+SolidCX is designed specifically for SolidJS.
 
 It does not attempt to copy React component APIs directly. Components should feel natural in Solid while preserving native HTML behavior wherever possible.
 
@@ -56,7 +56,7 @@ Core principles:
 ## Repository Structure
 
 ```text
-solidcn/
+solidcx/
 ├── apps/
 │   └── docs/
 │
@@ -96,7 +96,7 @@ A small utility for composing conditional class names.
 
 ```ts
 cx(
-  'scn-button',
+  'scx-button',
   condition && 'active',
   customClass,
 )
@@ -104,7 +104,7 @@ cx(
 
 ### `packages/styles`
 
-The SolidCN design system.
+The SolidCX design system.
 
 It contains:
 
@@ -156,24 +156,24 @@ component/
 
 ## Styling
 
-SolidCN uses Sass for component styling.
+SolidCX uses Sass for component styling.
 
 Global design-system styles are provided by:
 
 ```text
-@solidcn/styles
+@solidcx/styles
 ```
 
 Components consume semantic CSS variables such as:
 
 ```css
-var(--scn-background)
-var(--scn-foreground)
-var(--scn-primary)
-var(--scn-border)
-var(--scn-ring)
-var(--scn-space-4)
-var(--scn-radius-md)
+var(--scx-background)
+var(--scx-foreground)
+var(--scx-primary)
+var(--scx-border)
+var(--scx-ring)
+var(--scx-space-4)
+var(--scx-radius-md)
 ```
 
 Applications can then add their own styles on top of the design system.
@@ -197,19 +197,19 @@ pnpm install
 Run the documentation application:
 
 ```sh
-pnpm --filter @solidcn/docs dev
+pnpm --filter @solidcx/docs dev
 ```
 
 Run type checking for the UI package:
 
 ```sh
-pnpm --filter @solidcn/ui check-types
+pnpm --filter @solidcx/ui check-types
 ```
 
 Build the styles package:
 
 ```sh
-pnpm --filter @solidcn/styles build
+pnpm --filter @solidcx/styles build
 ```
 
 ## Component Development Workflow
@@ -260,7 +260,7 @@ Switch uses:
 <input type="checkbox" role="switch">
 ```
 
-This allows SolidCN to style controls without unnecessarily replacing the browser's native interaction model.
+This allows SolidCX to style controls without unnecessarily replacing the browser's native interaction model.
 
 Accessibility will become increasingly important as the library moves into more complex components such as:
 
@@ -330,27 +330,27 @@ Accessibility will become increasingly important as the library moves into more 
 Planned workflow:
 
 ```sh
-pnpm dlx solidcn init
+pnpm dlx solidcx init
 ```
 
 Then:
 
 ```sh
-pnpm dlx solidcn add button
-pnpm dlx solidcn add card
-pnpm dlx solidcn add input
+pnpm dlx solidcx add button
+pnpm dlx solidcx add card
+pnpm dlx solidcx add input
 ```
 
-The registry will eventually allow developers to add SolidCN components as source code directly into their applications.
+The registry will eventually allow developers to add SolidCX components as source code directly into their applications.
 
 ## Long-Term Goal
 
-SolidCN aims to become a practical, source-owned component ecosystem for SolidJS.
+SolidCX aims to become a practical, source-owned component ecosystem for SolidJS.
 
 The project will eventually include:
 
 ```text
-SolidCN
+SolidCX
 │
 ├── Design System
 │   ├── Colors
@@ -374,6 +374,6 @@ SolidCN
 
 ## Status
 
-SolidCN is currently under active development.
+SolidCX is currently under active development.
 
 The foundation and core form components are being built incrementally, with the `/test` route serving as the component development playground.

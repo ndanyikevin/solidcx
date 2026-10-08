@@ -1,27 +1,27 @@
-.scn-field {
+﻿.scx-field {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
   width: 100%;
 }
 
-.scn-field__description {
+.scx-field__description {
   margin: 0;
-  color: var(--scn-muted-foreground);
-  font-size: var(--scn-font-size-sm);
+  color: var(--scx-muted-foreground);
+  font-size: var(--scx-font-size-sm);
   line-height: 1.5;
 }
 
-.scn-field__error {
+.scx-field__error {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-1);
+  gap: var(--scx-space-1);
   margin: 0;
-  color: var(--scn-destructive);
-  font-size: var(--scn-font-size-sm);
+  color: var(--scx-destructive);
+  font-size: var(--scx-font-size-sm);
   line-height: 1.5;
 }
 
-.scn-field__error-message {
+.scx-field__error-message {
   display: block;
 }

@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import {
     splitProps,
 } from 'solid-js'
@@ -27,7 +27,7 @@ export const SidebarHeader: Component<
         <div
             {...rest}
             class={cx(
-                'scn-sidebar__header',
+                'scx-sidebar__header',
                 local.class,
             )}
         >
@@ -48,7 +48,7 @@ export const SidebarContent: Component<
         <div
             {...rest}
             class={cx(
-                'scn-sidebar__content',
+                'scx-sidebar__content',
                 local.class,
             )}
         >
@@ -69,7 +69,7 @@ export const SidebarFooter: Component<
         <div
             {...rest}
             class={cx(
-                'scn-sidebar__footer',
+                'scx-sidebar__footer',
                 local.class,
             )}
         >
@@ -90,7 +90,7 @@ export const SidebarGroup: Component<
         <div
             {...rest}
             class={cx(
-                'scn-sidebar__group',
+                'scx-sidebar__group',
                 local.class,
             )}
         >
@@ -111,7 +111,7 @@ export const SidebarGroupLabel: Component<
         <div
             {...rest}
             class={cx(
-                'scn-sidebar__group-label',
+                'scx-sidebar__group-label',
                 local.class,
             )}
         >
@@ -132,7 +132,7 @@ export const SidebarGroupContent: Component<
         <div
             {...rest}
             class={cx(
-                'scn-sidebar__group-content',
+                'scx-sidebar__group-content',
                 local.class,
             )}
         >
@@ -153,7 +153,7 @@ export const SidebarSeparator: Component<
         <hr
             {...rest}
             class={cx(
-                'scn-sidebar__separator',
+                'scx-sidebar__separator',
                 local.class,
             )}
         />

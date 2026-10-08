@@ -1,4 +1,4 @@
-import { createSignal } from 'solid-js'
+﻿import { createSignal } from 'solid-js'
 
 import {
     ContextMenu,
@@ -6,7 +6,7 @@ import {
     ContextMenuItem,
     ContextMenuSeparator,
     ContextMenuTrigger,
-} from '@solidcn/ui'
+} from '@solidcx/ui'
 
 export default function ContextMenuTestPage() {
     const [selected, setSelected] = createSignal('Nothing selected')
@@ -19,7 +19,7 @@ export default function ContextMenuTestPage() {
                 margin: '0 auto',
                 'font-family':
                     'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-                color: 'var(--scn-foreground, #0f172a)',
+                color: 'var(--scx-foreground, #0f172a)',
                 'min-height': '100vh',
             }}
         >
@@ -33,7 +33,7 @@ export default function ContextMenuTestPage() {
                 {/* Header Section */}
                 <header
                     style={{
-                        'border-bottom': '1px solid var(--scn-border, #e2e8f0)',
+                        'border-bottom': '1px solid var(--scx-border, #e2e8f0)',
                         'padding-bottom': '1.25rem',
                     }}
                 >
@@ -43,7 +43,7 @@ export default function ContextMenuTestPage() {
                             'font-size': '1.875rem',
                             'font-weight': '700',
                             'letter-spacing': '-0.025em',
-                            color: 'var(--scn-foreground, #0f172a)',
+                            color: 'var(--scx-foreground, #0f172a)',
                         }}
                     >
                         Context Menu
@@ -52,7 +52,7 @@ export default function ContextMenuTestPage() {
                     <p
                         style={{
                             margin: '0',
-                            color: 'var(--scn-muted-foreground, #64748b)',
+                            color: 'var(--scx-muted-foreground, #64748b)',
                             'font-size': '0.95rem',
                             'line-height': '1.5',
                         }}
@@ -70,10 +70,10 @@ export default function ContextMenuTestPage() {
                             'justify-content': 'center',
                             height: '220px',
                             width: '100%',
-                            'border-radius': 'var(--scn-radius-lg, 0.75rem)',
-                            border: '2px dashed var(--scn-border, #cbd5e1)',
-                            background: 'var(--scn-muted, #f8fafc)',
-                            color: 'var(--scn-muted-foreground, #64748b)',
+                            'border-radius': 'var(--scx-radius-lg, 0.75rem)',
+                            border: '2px dashed var(--scx-border, #cbd5e1)',
+                            background: 'var(--scx-muted, #f8fafc)',
+                            color: 'var(--scx-muted-foreground, #64748b)',
                             'font-size': '0.95rem',
                             'font-weight': '500',
                             cursor: 'context-menu',
@@ -150,15 +150,15 @@ export default function ContextMenuTestPage() {
                         'align-items': 'center',
                         'justify-content': 'space-between',
                         padding: '1rem 1.25rem',
-                        background: 'var(--scn-card, #ffffff)',
-                        border: '1px solid var(--scn-border, #e2e8f0)',
-                        'border-radius': 'var(--scn-radius-md, 0.5rem)',
+                        background: 'var(--scx-card, #ffffff)',
+                        border: '1px solid var(--scx-border, #e2e8f0)',
+                        'border-radius': 'var(--scx-radius-md, 0.5rem)',
                         'box-shadow': '0 1px 3px 0 rgba(0, 0, 0, 0.05)',
                     }}
                 >
                     <span
                         style={{
-                            color: 'var(--scn-muted-foreground, #64748b)',
+                            color: 'var(--scx-muted-foreground, #64748b)',
                             'font-size': '0.875rem',
                             'font-weight': '500',
                         }}
@@ -172,8 +172,8 @@ export default function ContextMenuTestPage() {
                             'align-items': 'center',
                             padding: '0.25rem 0.75rem',
                             'border-radius': '9999px',
-                            background: 'var(--scn-accent, #f1f5f9)',
-                            color: 'var(--scn-accent-foreground, #0f172a)',
+                            background: 'var(--scx-accent, #f1f5f9)',
+                            color: 'var(--scx-accent-foreground, #0f172a)',
                             'font-size': '0.875rem',
                             'font-weight': '600',
                         }}
@@ -186,9 +186,9 @@ export default function ContextMenuTestPage() {
                 <div
                     style={{
                         padding: '1.25rem',
-                        border: '1px solid var(--scn-border, #e2e8f0)',
-                        'border-radius': 'var(--scn-radius-md, 0.5rem)',
-                        background: 'var(--scn-card, #ffffff)',
+                        border: '1px solid var(--scx-border, #e2e8f0)',
+                        'border-radius': 'var(--scx-radius-md, 0.5rem)',
+                        background: 'var(--scx-card, #ffffff)',
                         'box-shadow': '0 1px 2px 0 rgba(0, 0, 0, 0.03)',
                     }}
                 >
@@ -210,7 +210,7 @@ export default function ContextMenuTestPage() {
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            style={{ color: 'var(--scn-muted-foreground, #64748b)' }}
+                            style={{ color: 'var(--scx-muted-foreground, #64748b)' }}
                         >
                             <rect width="20" height="16" x="2" y="4" rx="2" />
                             <path d="M6 8h.01" />
@@ -226,7 +226,7 @@ export default function ContextMenuTestPage() {
                             style={{
                                 'font-size': '0.95rem',
                                 'font-weight': '600',
-                                color: 'var(--scn-foreground, #0f172a)',
+                                color: 'var(--scx-foreground, #0f172a)',
                             }}
                         >
                             Keyboard Navigation Test
@@ -236,7 +236,7 @@ export default function ContextMenuTestPage() {
                     <p
                         style={{
                             margin: '0',
-                            color: 'var(--scn-muted-foreground, #64748b)',
+                            color: 'var(--scx-muted-foreground, #64748b)',
                             'font-size': '0.875rem',
                             'line-height': '1.5',
                         }}
@@ -257,9 +257,9 @@ const kbdStyle = {
     padding: '0.15rem 0.4rem',
     'font-size': '0.75rem',
     'font-family': 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace',
-    background: 'var(--scn-muted, #f1f5f9)',
-    border: '1px solid var(--scn-border, #cbd5e1)',
+    background: 'var(--scx-muted, #f1f5f9)',
+    border: '1px solid var(--scx-border, #cbd5e1)',
     'border-radius': '0.25rem',
-    color: 'var(--scn-foreground, #334155)',
+    color: 'var(--scx-foreground, #334155)',
     'box-shadow': '0 1px 0 0 rgba(0,0,0,0.2)',
 }

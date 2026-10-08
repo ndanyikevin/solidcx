@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -29,8 +29,8 @@ export const Avatar: Component<AvatarProps> = (props) => {
         <div
             {...rest}
             class={cx(
-                'scn-avatar',
-                `scn-avatar--${local.size ?? 'md'}`,
+                'scx-avatar',
+                `scx-avatar--${local.size ?? 'md'}`,
                 local.class,
             )}
         >
@@ -38,10 +38,10 @@ export const Avatar: Component<AvatarProps> = (props) => {
                 <img
                     src={local.src}
                     alt={local.alt ?? ''}
-                    class="scn-avatar__image"
+                    class="scx-avatar__image"
                 />
             ) : (
-                <span class="scn-avatar__fallback">
+                <span class="scx-avatar__fallback">
                     {local.fallback ?? local.children}
                 </span>
             )}

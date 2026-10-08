@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -24,8 +24,8 @@ export const Spinner: Component<SpinnerProps> = (props) => {
       role="status"
       aria-label="Loading"
       class={cx(
-        'scn-spinner',
-        `scn-spinner--${local.size ?? 'md'}`,
+        'scx-spinner',
+        `scx-spinner--${local.size ?? 'md'}`,
         local.class,
       )}
     />

@@ -1,4 +1,4 @@
-import { createSignal } from 'solid-js'
+﻿import { createSignal } from 'solid-js'
 
 import {
     Button,
@@ -41,7 +41,7 @@ export default function DrawerTestPage() {
 
                     <p
                         style={{
-                            color: 'var(--scn-muted-foreground)',
+                            color: 'var(--scx-muted-foreground)',
                         }}
                     >
                         A sliding panel for displaying
@@ -195,7 +195,7 @@ export default function DrawerTestPage() {
                         <span
                             style={{
                                 color:
-                                    'var(--scn-muted-foreground)',
+                                    'var(--scx-muted-foreground)',
                                 'font-size': '0.875rem',
                             }}
                         >

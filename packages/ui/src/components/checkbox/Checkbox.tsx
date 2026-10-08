@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -18,7 +18,7 @@ export const Checkbox: Component<CheckboxProps> = (props) => {
         <input
             {...rest}
             type="checkbox"
-            class={cx('scn-checkbox', local.class)}
+            class={cx('scx-checkbox', local.class)}
         />
     )
 }

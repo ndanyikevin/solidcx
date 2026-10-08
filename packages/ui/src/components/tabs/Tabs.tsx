@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createSignal,
@@ -56,7 +56,7 @@ export const Tabs: Component<TabsProps> = (props) => {
     >
       <div
         {...rest}
-        class={cx('scn-tabs', local.class)}
+        class={cx('scx-tabs', local.class)}
       >
         {local.children}
       </div>

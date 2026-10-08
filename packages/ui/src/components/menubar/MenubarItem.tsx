@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
     splitProps,
@@ -73,9 +73,9 @@ export const MenubarItem: Component<
                     : 0
             }
             class={cx(
-                'scn-menubar__item',
+                'scx-menubar__item',
                 local.disabled &&
-                'scn-menubar__item--disabled',
+                'scx-menubar__item--disabled',
                 local.class,
             )}
             onClick={handleClick}

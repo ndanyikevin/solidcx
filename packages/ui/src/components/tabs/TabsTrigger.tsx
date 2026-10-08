@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     createUniqueId,
     splitProps,
@@ -74,14 +74,14 @@ export const TabsTrigger: Component<TabsTriggerProps> = (
     return (
         <button
             {...rest}
-            id={`scn-tab-${id}`}
+            id={`scx-tab-${id}`}
             type="button"
             role="tab"
             aria-selected={isActive()}
             tabindex={isActive() ? 0 : -1}
             class={cx(
-                'scn-tabs__trigger',
-                isActive() && 'scn-tabs__trigger--active',
+                'scx-tabs__trigger',
+                isActive() && 'scx-tabs__trigger--active',
                 local.class,
             )}
             onClick={() => tabs.setValue(local.value)}

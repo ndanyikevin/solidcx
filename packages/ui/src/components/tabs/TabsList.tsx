@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -19,7 +19,7 @@ export const TabsList: Component<TabsListProps> = (props) => {
         <div
             {...rest}
             role="tablist"
-            class={cx('scn-tabs__list', local.class)}
+            class={cx('scx-tabs__list', local.class)}
         >
             {local.children}
         </div>

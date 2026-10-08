@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
     splitProps,
@@ -25,7 +25,7 @@ export const ContextMenuSeparator: Component<
             role="separator"
             aria-orientation="horizontal"
             class={cx(
-                'scn-context-menu__separator',
+                'scx-context-menu__separator',
                 local.class,
             )}
         >

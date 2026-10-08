@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -28,7 +28,7 @@ export const AspectRatio: Component<
     <div
       {...rest}
       class={cx(
-        'scn-aspect-ratio',
+        'scx-aspect-ratio',
         local.class,
       )}
       style={{

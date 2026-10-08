@@ -1,34 +1,34 @@
-.scn-select {
+﻿.scx-select {
   width: 100%;
   min-height: 2.5rem;
-  padding: 0 var(--scn-space-4);
+  padding: 0 var(--scx-space-4);
 
   appearance: auto;
 
-  background: var(--scn-background);
-  color: var(--scn-foreground);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
 
-  border: 1px solid var(--scn-input);
-  border-radius: var(--scn-radius-md);
+  border: 1px solid var(--scx-input);
+  border-radius: var(--scx-radius-md);
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-normal);
-  line-height: var(--scn-leading-normal);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-normal);
+  line-height: var(--scx-leading-normal);
 
   cursor: pointer;
 
   transition:
-    border-color var(--scn-duration-normal) var(--scn-ease-standard),
-    box-shadow var(--scn-duration-normal) var(--scn-ease-standard),
-    background-color var(--scn-duration-normal) var(--scn-ease-standard);
+    border-color var(--scx-duration-normal) var(--scx-ease-standard),
+    box-shadow var(--scx-duration-normal) var(--scx-ease-standard),
+    background-color var(--scx-duration-normal) var(--scx-ease-standard);
 
   &:hover:not(:disabled) {
-    border-color: var(--scn-muted-foreground);
+    border-color: var(--scx-muted-foreground);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 
@@ -42,20 +42,20 @@
   }
 }
 
-.scn-select--error {
-  border-color: var(--scn-destructive);
+.scx-select--error {
+  border-color: var(--scx-destructive);
 
   &:focus-visible {
-    outline-color: var(--scn-destructive);
+    outline-color: var(--scx-destructive);
   }
 
   option {
-    background: var(--scn-background);
-    color: var(--scn-foreground);
+    background: var(--scx-background);
+    color: var(--scx-foreground);
 
     &:checked {
-      background: var(--scn-primary);
-      color: var(--scn-primary-foreground);
+      background: var(--scx-primary);
+      color: var(--scx-primary-foreground);
     }
   }
 }

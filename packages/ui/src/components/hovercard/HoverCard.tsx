@@ -1,4 +1,4 @@
-import type {
+﻿import type {
   Component,
   JSX,
 } from 'solid-js'
@@ -75,10 +75,10 @@ export const HoverCard: Component<
   )
 
   const triggerId =
-    `scn-hover-card-trigger-${createUniqueId()}`
+    `scx-hover-card-trigger-${createUniqueId()}`
 
   const contentId =
-    `scn-hover-card-content-${createUniqueId()}`
+    `scx-hover-card-content-${createUniqueId()}`
 
   let openTimer:
     ReturnType<typeof setTimeout> | undefined
@@ -197,7 +197,7 @@ export const HoverCard: Component<
             : undefined
         }
         class={cx(
-          'scn-hover-card',
+          'scx-hover-card',
           local.class,
         )}
         onPointerEnter={
@@ -249,7 +249,7 @@ export const HoverCardTrigger: Component<
           : undefined
       }
       class={cx(
-        'scn-hover-card__trigger',
+        'scx-hover-card__trigger',
         local.class,
       )}
       onFocus={() => {
@@ -299,7 +299,7 @@ export const HoverCardContent: Component<
       }
       hidden={!hoverCard.open()}
       class={cx(
-        'scn-hover-card__content',
+        'scx-hover-card__content',
         local.class,
       )}
       onPointerEnter={() => {

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -27,9 +27,9 @@ export const PaginationItem: Component<
                 local.active ? 'page' : undefined
             }
             class={cx(
-                'scn-pagination__item',
+                'scx-pagination__item',
                 local.active &&
-                'scn-pagination__item--active',
+                'scx-pagination__item--active',
                 local.class,
             )}
         >

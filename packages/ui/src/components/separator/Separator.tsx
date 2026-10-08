@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -30,8 +30,8 @@ export const Separator: Component<SeparatorProps> = (props) => {
                 local.decorative ? undefined : orientation
             }
             class={cx(
-                'scn-separator',
-                `scn-separator--${orientation}`,
+                'scx-separator',
+                `scx-separator--${orientation}`,
                 local.class,
             )}
         />

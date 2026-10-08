@@ -1,10 +1,10 @@
-.scn-tooltip {
+﻿.scx-tooltip {
   position: relative;
   display: inline-flex;
   width: fit-content;
 }
 
-.scn-tooltip__trigger {
+.scx-tooltip__trigger {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -20,34 +20,34 @@
   cursor: pointer;
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
-    border-radius: var(--scn-radius-sm);
+    border-radius: var(--scx-radius-sm);
   }
 }
 
-.scn-tooltip__content {
+.scx-tooltip__content {
   position: absolute;
   z-index: 50;
 
   left: 50%;
-  bottom: calc(100% + var(--scn-space-2));
+  bottom: calc(100% + var(--scx-space-2));
 
   transform: translateX(-50%);
 
   width: max-content;
   max-width: 16rem;
 
-  padding: var(--scn-space-2) var(--scn-space-3);
+  padding: var(--scx-space-2) var(--scx-space-3);
 
-  background: var(--scn-foreground);
-  color: var(--scn-background);
+  background: var(--scx-foreground);
+  color: var(--scx-background);
 
-  border-radius: var(--scn-radius-sm);
+  border-radius: var(--scx-radius-sm);
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-xs);
-  font-weight: var(--scn-weight-medium);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-xs);
+  font-weight: var(--scx-weight-medium);
   line-height: 1.4;
 
   box-shadow:
@@ -56,12 +56,12 @@
 
   pointer-events: none;
 
-  animation: scn-tooltip-in
-    var(--scn-duration-fast)
-    var(--scn-ease-standard);
+  animation: scx-tooltip-in
+    var(--scx-duration-fast)
+    var(--scx-ease-standard);
 }
 
-@keyframes scn-tooltip-in {
+@keyframes scx-tooltip-in {
   from {
     opacity: 0;
     transform: translateX(-50%) translateY(4px);
@@ -74,7 +74,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scn-tooltip__content {
+  .scx-tooltip__content {
     animation: none;
   }
 }

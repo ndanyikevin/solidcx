@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     Show,
     onCleanup,
@@ -56,7 +56,7 @@ export const ConfirmationConfirm: Component<
             ref={buttonRef}
             type="button"
             class={cx(
-                'scn-confirmation__confirm',
+                'scx-confirmation__confirm',
                 local.class,
             )}
             disabled={
@@ -73,7 +73,7 @@ export const ConfirmationConfirm: Component<
                     size={16}
                     strokeWidth={2}
                     aria-hidden="true"
-                    class="scn-confirmation__spinner"
+                    class="scx-confirmation__spinner"
                 />
             </Show>
 

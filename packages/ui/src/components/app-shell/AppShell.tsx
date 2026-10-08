@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { Show, splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 import { SidebarProvider, SidebarTrigger, useSidebar } from '../sidebar'
@@ -15,11 +15,11 @@ export interface AppShellProps {
 export const AppShell: Component<AppShellProps> = (props) => {
   return (
     <SidebarProvider>
-      <div class={cx('scn-app-shell', props.class)}>
+      <div class={cx('scx-app-shell', props.class)}>
         {props.sidebar}
-        <div class="scn-app-shell__main">
+        <div class="scx-app-shell__main">
           <Show when={props.header}>{props.header}</Show>
-          <main class="scn-app-shell__content">{props.children}</main>
+          <main class="scx-app-shell__content">{props.children}</main>
         </div>
       </div>
     </SidebarProvider>
@@ -38,9 +38,9 @@ export const AppHeader: Component<AppHeaderProps> = (props) => {
   const [local, rest] = splitProps(props, ['class', 'children'])
 
   return (
-    <header {...rest} class={cx('scn-app-header', local.class)}>
-      <SidebarTrigger class="scn-app-header__trigger">☰</SidebarTrigger>
-      <div class="scn-app-header__content">{local.children}</div>
+    <header {...rest} class={cx('scx-app-header', local.class)}>
+      <SidebarTrigger class="scx-app-header__trigger">☰</SidebarTrigger>
+      <div class="scx-app-header__content">{local.children}</div>
     </header>
   )
 }
@@ -61,20 +61,20 @@ export interface BreadcrumbsProps {
 
 export const Breadcrumbs: Component<BreadcrumbsProps> = (props) => {
   return (
-    <nav aria-label="Breadcrumb" class={cx('scn-breadcrumbs', props.class)}>
-      <ol class="scn-breadcrumbs__list">
+    <nav aria-label="Breadcrumb" class={cx('scx-breadcrumbs', props.class)}>
+      <ol class="scx-breadcrumbs__list">
         {props.items.map((item, index) => {
           const isLast = index === props.items.length - 1
 
           return (
-            <li class="scn-breadcrumbs__item">
+            <li class="scx-breadcrumbs__item">
               <Show when={!isLast && item.href} fallback={<span>{item.label}</span>}>
-                <a href={item.href} class="scn-breadcrumbs__link">
+                <a href={item.href} class="scx-breadcrumbs__link">
                   {item.label}
                 </a>
               </Show>
               <Show when={!isLast}>
-                <span class="scn-breadcrumbs__separator">/</span>
+                <span class="scx-breadcrumbs__separator">/</span>
               </Show>
             </li>
           )

@@ -1,4 +1,4 @@
-.scn-drawer {
+﻿.scx-drawer {
     position: relative;
     z-index: 50;
 
@@ -8,10 +8,10 @@
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        border: 1px solid var(--scn-border);
-        border-radius: var(--scn-radius-md);
-        background: var(--scn-background);
-        color: var(--scn-foreground);
+        border: 1px solid var(--scx-border);
+        border-radius: var(--scx-radius-md);
+        background: var(--scx-background);
+        color: var(--scx-foreground);
         font: inherit;
         font-size: 0.875rem;
         font-weight: 500;
@@ -24,11 +24,11 @@
             box-shadow 150ms ease;
 
         &:hover:not(:disabled) {
-            background: var(--scn-accent);
+            background: var(--scx-accent);
         }
 
         &:focus-visible {
-            outline: 2px solid var(--scn-ring);
+            outline: 2px solid var(--scx-ring);
             outline-offset: 2px;
         }
 
@@ -58,7 +58,7 @@
         border: 0;
         background: rgb(0 0 0 / 55%);
         cursor: default;
-        animation: scn-drawer-backdrop-in 180ms ease-out;
+        animation: scx-drawer-backdrop-in 180ms ease-out;
 
         &:focus-visible {
             outline: none;
@@ -70,10 +70,10 @@
         z-index: 101;
         display: flex;
         flex-direction: column;
-        background: var(--scn-background);
-        color: var(--scn-foreground);
-        border: 1px solid var(--scn-border);
-        box-shadow: var(--scn-shadow-lg);
+        background: var(--scx-background);
+        color: var(--scx-foreground);
+        border: 1px solid var(--scx-border);
+        box-shadow: var(--scx-shadow-lg);
         overflow-y: auto;
         overscroll-behavior: contain;
         animation-duration: 220ms;
@@ -88,7 +88,7 @@
             border-top: 0;
             border-right: 0;
             border-bottom: 0;
-            animation-name: scn-drawer-slide-in-right;
+            animation-name: scx-drawer-slide-in-right;
         }
 
         &[data-side='left'] {
@@ -99,7 +99,7 @@
             border-top: 0;
             border-left: 0;
             border-bottom: 0;
-            animation-name: scn-drawer-slide-in-left;
+            animation-name: scx-drawer-slide-in-left;
         }
 
         &[data-side='top'] {
@@ -110,7 +110,7 @@
             border-top: 0;
             border-left: 0;
             border-right: 0;
-            animation-name: scn-drawer-slide-in-top;
+            animation-name: scx-drawer-slide-in-top;
         }
 
         &[data-side='bottom'] {
@@ -121,7 +121,7 @@
             border-right: 0;
             border-bottom: 0;
             border-left: 0;
-            animation-name: scn-drawer-slide-in-bottom;
+            animation-name: scx-drawer-slide-in-bottom;
         }
     }
 
@@ -134,7 +134,7 @@
 
     &__title {
         margin: 0;
-        color: var(--scn-foreground);
+        color: var(--scx-foreground);
         font-size: 1.125rem;
         font-weight: 600;
         line-height: 1.4;
@@ -143,7 +143,7 @@
 
     &__description {
         margin: 0;
-        color: var(--scn-muted-foreground);
+        color: var(--scx-muted-foreground);
         font-size: 0.875rem;
         line-height: 1.5;
     }
@@ -154,11 +154,11 @@
         gap: 0.75rem;
         margin-top: auto;
         padding: 1.5rem;
-        border-top: 1px solid var(--scn-border);
+        border-top: 1px solid var(--scx-border);
     }
 }
 
-@keyframes scn-drawer-backdrop-in {
+@keyframes scx-drawer-backdrop-in {
     from {
         opacity: 0;
     }
@@ -168,7 +168,7 @@
     }
 }
 
-@keyframes scn-drawer-slide-in-right {
+@keyframes scx-drawer-slide-in-right {
     from {
         transform: translateX(100%);
     }
@@ -178,7 +178,7 @@
     }
 }
 
-@keyframes scn-drawer-slide-in-left {
+@keyframes scx-drawer-slide-in-left {
     from {
         transform: translateX(-100%);
     }
@@ -188,7 +188,7 @@
     }
 }
 
-@keyframes scn-drawer-slide-in-top {
+@keyframes scx-drawer-slide-in-top {
     from {
         transform: translateY(-100%);
     }
@@ -198,7 +198,7 @@
     }
 }
 
-@keyframes scn-drawer-slide-in-bottom {
+@keyframes scx-drawer-slide-in-bottom {
     from {
         transform: translateY(100%);
     }
@@ -209,8 +209,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .scn-drawer__backdrop,
-    .scn-drawer__content {
+    .scx-drawer__backdrop,
+    .scx-drawer__content {
         animation: none;
     }
 }
