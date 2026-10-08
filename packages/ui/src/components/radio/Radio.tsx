@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -18,7 +18,7 @@ export const Radio: Component<RadioProps> = (props) => {
         <input
             {...rest}
             type="radio"
-            class={cx('scn-radio', local.class)}
+            class={cx('scx-radio', local.class)}
         />
     )
 }

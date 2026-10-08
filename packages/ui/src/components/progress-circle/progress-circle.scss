@@ -1,4 +1,4 @@
-.scn-progress-circle {
+﻿.scx-progress-circle {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -6,42 +6,42 @@
   flex: 0 0 auto;
 }
 
-.scn-progress-circle__svg {
+.scx-progress-circle__svg {
   display: block;
   transform: rotate(-90deg);
 }
 
-.scn-progress-circle__track {
-  stroke: var(--scn-muted);
+.scx-progress-circle__track {
+  stroke: var(--scx-muted);
 }
 
-.scn-progress-circle__indicator {
-  stroke: var(--scn-primary);
+.scx-progress-circle__indicator {
+  stroke: var(--scx-primary);
   stroke-linecap: round;
   transition:
     stroke-dashoffset
-    var(--scn-duration-normal)
-    var(--scn-ease-standard);
+    var(--scx-duration-normal)
+    var(--scx-ease-standard);
 }
 
-.scn-progress-circle__content {
+.scx-progress-circle__content {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--scn-foreground);
+  color: var(--scx-foreground);
 }
 
-.scn-progress-circle__value {
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-semibold);
+.scx-progress-circle__value {
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-semibold);
   line-height: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scn-progress-circle__indicator {
+  .scx-progress-circle__indicator {
     transition: none;
   }
 }

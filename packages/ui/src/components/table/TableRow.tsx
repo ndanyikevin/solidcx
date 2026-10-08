@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -21,7 +21,7 @@ export const TableRow: Component<TableRowProps> = (
         <tr
             {...rest}
             class={cx(
-                'scn-table__row',
+                'scx-table__row',
                 local.class,
             )}
         >

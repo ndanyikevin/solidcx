@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
     createEffect,
@@ -99,7 +99,7 @@ export const MenubarMenu: Component<
 
         if (
             target.closest(
-                '[data-scn-menubar-menu]',
+                '[data-scx-menubar-menu]',
             )
         ) {
             return
@@ -136,7 +136,7 @@ export const MenubarMenu: Component<
         >
             <div
                 {...rest}
-                data-scn-menubar-menu
+                data-scx-menubar-menu
                 data-menu-id={id}
                 data-state={
                     open()
@@ -144,7 +144,7 @@ export const MenubarMenu: Component<
                         : 'closed'
                 }
                 class={cx(
-                    'scn-menubar__menu',
+                    'scx-menubar__menu',
                     local.class,
                 )}
             >

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createEffect,
   createSignal,
@@ -103,7 +103,7 @@ export const DatePicker: Component<
     <div
       {...rest}
       class={cx(
-        'scn-date-picker',
+        'scx-date-picker',
         local.class,
       )}
     >
@@ -114,16 +114,16 @@ export const DatePicker: Component<
         <PopoverTrigger
           ref={(el) => (triggerRef = el)}
           class={cx(
-            'scn-date-picker__trigger',
+            'scx-date-picker__trigger',
             !selectedDate() &&
-            'scn-date-picker__trigger--placeholder',
+            'scx-date-picker__trigger--placeholder',
           )}
         >
           <CalendarDays
             size={16}
             strokeWidth={2}
             aria-hidden="true"
-            class="scn-date-picker__icon"
+            class="scx-date-picker__icon"
           />
 
           <span>
@@ -136,7 +136,7 @@ export const DatePicker: Component<
 
         <PopoverContent
           ref={(el) => (contentRef = el)}
-          class="scn-date-picker__content"
+          class="scx-date-picker__content"
         >
           <Calendar
             value={selectedDate()}

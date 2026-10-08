@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -29,8 +29,8 @@ export const Badge: Component<BadgeProps> = (props) => {
         <span
             {...rest}
             class={cx(
-                'scn-badge',
-                `scn-badge--${local.variant ?? 'primary'}`,
+                'scx-badge',
+                `scx-badge--${local.variant ?? 'primary'}`,
                 local.class,
             )}
         >

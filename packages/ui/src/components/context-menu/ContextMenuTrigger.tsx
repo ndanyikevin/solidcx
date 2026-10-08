@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
     splitProps,
@@ -39,7 +39,7 @@ export const ContextMenuTrigger: Component<
         <div
             {...rest}
             class={cx(
-                'scn-context-menu__trigger',
+                'scx-context-menu__trigger',
                 local.class,
             )}
             onContextMenu={

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -44,7 +44,7 @@ export const PopoverTrigger: Component<
             aria-expanded={popover.open()}
             aria-controls={popover.contentId}
             class={cx(
-                'scn-popover__trigger',
+                'scx-popover__trigger',
                 local.class,
             )}
             onClick={handleClick}

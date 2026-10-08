@@ -1,121 +1,121 @@
-.scn-date-picker {
+﻿.scx-date-picker {
   display: inline-flex;
   flex-direction: column;
 }
 
-.scn-date-picker__trigger {
+.scx-date-picker__trigger {
   display: inline-flex;
   align-items: center;
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
   min-width: 12rem;
   height: 2.5rem;
-  padding: 0 var(--scn-space-3);
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-md);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
+  padding: 0 var(--scx-space-3);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-md);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
   font: inherit;
-  font-size: var(--scn-font-size-sm);
+  font-size: var(--scx-font-size-sm);
   cursor: pointer;
   transition:
-    background-color var(--scn-transition-fast),
-    border-color var(--scn-transition-fast),
-    box-shadow var(--scn-transition-fast);
+    background-color var(--scx-transition-fast),
+    border-color var(--scx-transition-fast),
+    box-shadow var(--scx-transition-fast);
 
   &:hover {
-    background: var(--scn-muted);
+    background: var(--scx-muted);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 }
 
-.scn-date-picker__trigger--placeholder {
-  color: var(--scn-muted-foreground);
+.scx-date-picker__trigger--placeholder {
+  color: var(--scx-muted-foreground);
 }
 
-.scn-date-picker__icon {
+.scx-date-picker__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
 }
 
-.scn-date-picker__content {
+.scx-date-picker__content {
   padding: 0;
 }
 
-.scn-calendar__heading {
-  padding: var(--scn-space-1)
-    var(--scn-space-2);
+.scx-calendar__heading {
+  padding: var(--scx-space-1)
+    var(--scx-space-2);
   border: 0;
-  border-radius: var(--scn-radius-md);
+  border-radius: var(--scx-radius-md);
   background: transparent;
-  color: var(--scn-foreground);
+  color: var(--scx-foreground);
   font: inherit;
-  font-size: var(--scn-font-size-sm);
+  font-size: var(--scx-font-size-sm);
   font-weight: 600;
   cursor: pointer;
 
   &:hover {
-    background: var(--scn-muted);
+    background: var(--scx-muted);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 }
 
-.scn-calendar__month-grid,
-.scn-calendar__year-grid {
+.scx-calendar__month-grid,
+.scx-calendar__year-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
 }
 
-.scn-calendar__month-option,
-.scn-calendar__year-option {
+.scx-calendar__month-option,
+.scx-calendar__year-option {
   min-height: 2.75rem;
-  padding: var(--scn-space-2);
+  padding: var(--scx-space-2);
   border: 0;
-  border-radius: var(--scn-radius-md);
+  border-radius: var(--scx-radius-md);
   background: transparent;
-  color: var(--scn-foreground);
+  color: var(--scx-foreground);
   font: inherit;
-  font-size: var(--scn-font-size-sm);
+  font-size: var(--scx-font-size-sm);
   cursor: pointer;
 
   &:hover {
-    background: var(--scn-muted);
+    background: var(--scx-muted);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 }
 
-.scn-calendar__month-option--selected,
-.scn-calendar__year-option--selected {
-  background: var(--scn-primary);
-  color: var(--scn-primary-foreground);
+.scx-calendar__month-option--selected,
+.scx-calendar__year-option--selected {
+  background: var(--scx-primary);
+  color: var(--scx-primary-foreground);
 
   &:hover {
-    background: var(--scn-primary);
+    background: var(--scx-primary);
   }
 }
 
-.scn-calendar__month-option--outside,
-.scn-calendar__year-option--outside {
-  color: var(--scn-muted-foreground);
+.scx-calendar__month-option--outside,
+.scx-calendar__year-option--outside {
+  color: var(--scx-muted-foreground);
   opacity: 0.5;
 }
 
 
-.scn-date-picker__icon {
+.scx-date-picker__icon {
   flex: 0 0 auto;
-  color: var(--scn-muted-foreground);
+  color: var(--scx-muted-foreground);
 }

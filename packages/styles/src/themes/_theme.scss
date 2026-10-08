@@ -1,32 +1,32 @@
-@use '../abstracts/config' as config;
+﻿@use '../abstracts/config' as config;
 @use '../abstracts/functions' as fn;
 
 :root {
-  --scn-background: #{fn.color(config.$neutral, 50)};
-  --scn-foreground: #{fn.color(config.$neutral, 950)};
+  --scx-background: #{fn.color(config.$neutral, 50)};
+  --scx-foreground: #{fn.color(config.$neutral, 950)};
 
-  --scn-primary: #{fn.color(config.$primary, 600)};
-  --scn-primary-foreground: #{fn.color(config.$neutral, 50)};
+  --scx-primary: #{fn.color(config.$primary, 600)};
+  --scx-primary-foreground: #{fn.color(config.$neutral, 50)};
 
-  --scn-secondary: #{fn.color(config.$neutral, 100)};
-  --scn-secondary-foreground: #{fn.color(config.$neutral, 900)};
+  --scx-secondary: #{fn.color(config.$neutral, 100)};
+  --scx-secondary-foreground: #{fn.color(config.$neutral, 900)};
 
-  --scn-muted: #{fn.color(config.$neutral, 100)};
-  --scn-muted-foreground: #{fn.color(config.$neutral, 500)};
+  --scx-muted: #{fn.color(config.$neutral, 100)};
+  --scx-muted-foreground: #{fn.color(config.$neutral, 500)};
 
-  --scn-accent: #{fn.color(config.$primary, 100)};
-  --scn-accent-foreground: #{fn.color(config.$primary, 900)};
+  --scx-accent: #{fn.color(config.$primary, 100)};
+  --scx-accent-foreground: #{fn.color(config.$primary, 900)};
 
-  --scn-destructive: #dc2626;
-  --scn-destructive-foreground: #{fn.color(config.$neutral, 50)};
+  --scx-destructive: #dc2626;
+  --scx-destructive-foreground: #{fn.color(config.$neutral, 50)};
 
-  --scn-border: #{fn.color(config.$neutral, 200)};
-  --scn-input: #{fn.color(config.$neutral, 200)};
-  --scn-ring: #{fn.color(config.$primary, 500)};
+  --scx-border: #{fn.color(config.$neutral, 200)};
+  --scx-input: #{fn.color(config.$neutral, 200)};
+  --scx-ring: #{fn.color(config.$primary, 500)};
 
-  --scn-success: #16a34a;
-  --scn-success-foreground: #{fn.color(config.$neutral, 50)};
+  --scx-success: #16a34a;
+  --scx-success-foreground: #{fn.color(config.$neutral, 50)};
 
-  --scn-warning: #d97706;
-  --scn-warning-foreground: #{fn.color(config.$neutral, 50)};
+  --scx-warning: #d97706;
+  --scx-warning-foreground: #{fn.color(config.$neutral, 50)};
 }

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     For,
     splitProps,
@@ -32,7 +32,7 @@ export const ToastViewport: Component<
             aria-live="polite"
             aria-atomic="false"
             class={cx(
-                'scn-toast__viewport',
+                'scx-toast__viewport',
                 local.class,
             )}
         >

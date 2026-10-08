@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -16,10 +16,10 @@ export const Table: Component<TableProps> = (props) => {
   ])
 
   return (
-    <div class="scn-table-wrapper">
+    <div class="scx-table-wrapper">
       <table
         {...rest}
-        class={cx('scn-table', local.class)}
+        class={cx('scx-table', local.class)}
       >
         {local.children}
       </table>

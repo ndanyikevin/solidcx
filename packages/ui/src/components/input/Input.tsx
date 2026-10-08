@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -22,8 +22,8 @@ export const Input: Component<InputProps> = (props) => {
         <input
             {...rest}
             class={cx(
-                'scn-input',
-                `scn-input--${local.variant ?? 'default'}`,
+                'scx-input',
+                `scx-input--${local.variant ?? 'default'}`,
                 local.class,
             )}
         />

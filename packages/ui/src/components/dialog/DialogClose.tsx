@@ -1,4 +1,4 @@
-
+﻿
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { X } from 'lucide-solid'
@@ -28,7 +28,7 @@ export const DialogClose: Component<
       {...rest}
       type="button"
       class={cx(
-        'scn-dialog__close',
+        'scx-dialog__close',
         local.class,
       )}
       aria-label="Close dialog"

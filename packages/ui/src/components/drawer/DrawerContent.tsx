@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import {
     Show,
     splitProps,
@@ -30,7 +30,7 @@ export const DrawerContent: Component<
             <>
                 <button
                     type="button"
-                    class="scn-drawer__backdrop"
+                    class="scx-drawer__backdrop"
                     aria-label="Close drawer"
                     tabindex="-1"
                     onClick={() => {
@@ -45,7 +45,7 @@ export const DrawerContent: Component<
                     data-state="open"
                     data-side={drawer.side()}
                     class={cx(
-                        'scn-drawer__content',
+                        'scx-drawer__content',
                         local.class,
                     )}
                 >

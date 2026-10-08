@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -21,7 +21,7 @@ export const TableBody: Component<TableBodyProps> = (
         <tbody
             {...rest}
             class={cx(
-                'scn-table__body',
+                'scx-table__body',
                 local.class,
             )}
         >

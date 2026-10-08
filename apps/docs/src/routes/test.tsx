@@ -1,4 +1,4 @@
-import {
+﻿import {
     createSignal,
 } from 'solid-js'
 
@@ -9,7 +9,7 @@ import {
     MenubarMenu,
     MenubarSeparator,
     MenubarTrigger,
-} from '@solidcn/ui'
+} from '@solidcx/ui'
 
 export default function MenubarTestPage() {
     const [selected, setSelected] =
@@ -36,7 +36,7 @@ export default function MenubarTestPage() {
                     <p
                         style={{
                             color:
-                                'var(--scn-muted-foreground)',
+                                'var(--scx-muted-foreground)',
                         }}
                     >
                         Horizontal application-style
@@ -174,11 +174,11 @@ export default function MenubarTestPage() {
                     style={{
                         padding: '1rem',
                         border:
-                            '1px solid var(--scn-border)',
+                            '1px solid var(--scx-border)',
                         'border-radius':
-                            'var(--scn-radius-md)',
+                            'var(--scx-radius-md)',
                         background:
-                            'var(--scn-background)',
+                            'var(--scx-background)',
                     }}
                 >
                     <strong>Selected:</strong>{' '}
@@ -188,7 +188,7 @@ export default function MenubarTestPage() {
                 <div
                     style={{
                         color:
-                            'var(--scn-muted-foreground)',
+                            'var(--scx-muted-foreground)',
                         'font-size': '0.875rem',
                     }}
                 >

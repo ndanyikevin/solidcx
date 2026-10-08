@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import { Show, splitProps } from 'solid-js'
 import { X } from 'lucide-solid'
 import { cx } from '@solidcx/cx'
@@ -37,14 +37,14 @@ export const ToastItem: Component<
                     : 'status'
             }
             class={cx(
-                'scn-toast',
-                `scn-toast--${variant()}`,
+                'scx-toast',
+                `scx-toast--${variant()}`,
                 local.class,
             )}
         >
-            <div class="scn-toast__body">
+            <div class="scx-toast__body">
                 <Show when={local.toast.title}>
-                    <div class="scn-toast__title">
+                    <div class="scx-toast__title">
                         {local.toast.title}
                     </div>
                 </Show>
@@ -52,7 +52,7 @@ export const ToastItem: Component<
                 <Show
                     when={local.toast.description}
                 >
-                    <div class="scn-toast__description">
+                    <div class="scx-toast__description">
                         {local.toast.description}
                     </div>
                 </Show>
@@ -60,7 +60,7 @@ export const ToastItem: Component<
 
             <button
                 type="button"
-                class="scn-toast__close"
+                class="scx-toast__close"
                 aria-label="Close notification"
                 onClick={() =>
                     dismiss(local.toast.id)

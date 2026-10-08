@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
   createSignal,
@@ -77,7 +77,7 @@ export const Menubar: Component<
         {...rest}
         role="menubar"
         class={cx(
-          'scn-menubar',
+          'scx-menubar',
           local.class,
         )}
       >

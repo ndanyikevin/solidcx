@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { ChevronRight } from 'lucide-solid'
 import { cx } from '@solidcx/cx'
@@ -24,7 +24,7 @@ export const BreadcrumbSeparator: Component<
             role="presentation"
             aria-hidden="true"
             class={cx(
-                'scn-breadcrumb__separator',
+                'scx-breadcrumb__separator',
                 local.class,
             )}
         >

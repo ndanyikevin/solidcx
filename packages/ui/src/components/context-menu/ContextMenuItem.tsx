@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
     splitProps,
@@ -55,9 +55,9 @@ export const ContextMenuItem: Component<
                     : 0
             }
             class={cx(
-                'scn-context-menu__item',
+                'scx-context-menu__item',
                 local.disabled &&
-                'scn-context-menu__item--disabled',
+                'scx-context-menu__item--disabled',
                 local.class,
             )}
             onClick={handleClick}

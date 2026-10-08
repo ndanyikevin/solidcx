@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -30,18 +30,18 @@ export const Alert: Component<AlertProps> = (props) => {
       {...rest}
       role="alert"
       class={cx(
-        'scn-alert',
-        `scn-alert--${local.variant ?? 'default'}`,
+        'scx-alert',
+        `scx-alert--${local.variant ?? 'default'}`,
         local.class,
       )}
     >
       {local.title && (
-        <div class="scn-alert__title">
+        <div class="scx-alert__title">
           {local.title}
         </div>
       )}
 
-      <div class="scn-alert__content">
+      <div class="scx-alert__content">
         {local.children}
       </div>
     </div>

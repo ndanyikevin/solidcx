@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -16,7 +16,7 @@ export const Skeleton: Component<SkeletonProps> = (props) => {
         <div
             {...rest}
             aria-hidden="true"
-            class={cx('scn-skeleton', local.class)}
+            class={cx('scx-skeleton', local.class)}
         />
     )
 }

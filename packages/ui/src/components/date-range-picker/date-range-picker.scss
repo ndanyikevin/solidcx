@@ -1,32 +1,32 @@
-.scn-date-range-picker {
+﻿.scx-date-range-picker {
   position: relative;
   width: 100%;
 }
 
-.scn-date-range-picker__trigger {
+.scx-date-range-picker__trigger {
   display: flex;
   align-items: center;
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
   width: 100%;
   min-height: 2.5rem;
   padding:
-    var(--scn-space-2)
-    var(--scn-space-3);
-  border: 1px solid var(--scn-input);
-  border-radius: var(--scn-radius-md);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
+    var(--scx-space-2)
+    var(--scx-space-3);
+  border: 1px solid var(--scx-input);
+  border-radius: var(--scx-radius-md);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
   font: inherit;
-  font-size: var(--scn-font-size-sm);
+  font-size: var(--scx-font-size-sm);
   text-align: left;
   cursor: pointer;
 
   &:hover {
-    border-color: var(--scn-foreground);
+    border-color: var(--scx-foreground);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 
@@ -36,12 +36,12 @@
   }
 }
 
-.scn-date-range-picker__icon {
+.scx-date-range-picker__icon {
   flex: 0 0 auto;
-  color: var(--scn-muted-foreground);
+  color: var(--scx-muted-foreground);
 }
 
-.scn-date-range-picker__value {
+.scx-date-range-picker__value {
   flex: 1;
   min-width: 0;
   overflow: hidden;
@@ -49,110 +49,110 @@
   white-space: nowrap;
 }
 
-.scn-date-range-picker__value--placeholder {
-  color: var(--scn-muted-foreground);
+.scx-date-range-picker__value--placeholder {
+  color: var(--scx-muted-foreground);
 }
 
-.scn-date-range-picker__clear {
+.scx-date-range-picker__clear {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 1.5rem;
   height: 1.5rem;
   flex: 0 0 auto;
-  border-radius: var(--scn-radius-sm);
-  color: var(--scn-muted-foreground);
+  border-radius: var(--scx-radius-sm);
+  color: var(--scx-muted-foreground);
   cursor: pointer;
 
   &:hover {
-    background: var(--scn-muted);
-    color: var(--scn-foreground);
+    background: var(--scx-muted);
+    color: var(--scx-foreground);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 }
 
-.scn-date-range-picker__chevron {
+.scx-date-range-picker__chevron {
   flex: 0 0 auto;
-  color: var(--scn-muted-foreground);
+  color: var(--scx-muted-foreground);
   transition:
     transform
-    var(--scn-duration-fast)
-    var(--scn-ease-standard);
+    var(--scx-duration-fast)
+    var(--scx-ease-standard);
 }
 
-.scn-date-range-picker__trigger[aria-expanded='true']
-  .scn-date-range-picker__chevron {
+.scx-date-range-picker__trigger[aria-expanded='true']
+  .scx-date-range-picker__chevron {
   transform: rotate(180deg);
 }
 
-.scn-date-range-picker__popover {
+.scx-date-range-picker__popover {
   position: absolute;
   z-index: 100;
-  top: calc(100% + var(--scn-space-2));
+  top: calc(100% + var(--scx-space-2));
   left: 0;
   min-width: 20rem;
-  padding: var(--scn-space-4);
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-lg);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
-  box-shadow: var(--scn-shadow-lg);
+  padding: var(--scx-space-4);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-lg);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
+  box-shadow: var(--scx-shadow-lg);
 }
 
-.scn-date-range-picker__header {
-  margin-bottom: var(--scn-space-3);
+.scx-date-range-picker__header {
+  margin-bottom: var(--scx-space-3);
 }
 
-.scn-date-range-picker__title {
-  font-size: var(--scn-font-size-sm);
+.scx-date-range-picker__title {
+  font-size: var(--scx-font-size-sm);
   font-weight: 600;
 }
 
-.scn-date-range-picker__hint {
-  margin-top: var(--scn-space-1);
-  color: var(--scn-muted-foreground);
-  font-size: var(--scn-font-size-xs);
+.scx-date-range-picker__hint {
+  margin-top: var(--scx-space-1);
+  color: var(--scx-muted-foreground);
+  font-size: var(--scx-font-size-xs);
 }
 
-.scn-date-range-picker__footer {
+.scx-date-range-picker__footer {
   display: flex;
   justify-content: flex-end;
-  gap: var(--scn-space-2);
-  margin-top: var(--scn-space-3);
-  padding-top: var(--scn-space-3);
-  border-top: 1px solid var(--scn-border);
+  gap: var(--scx-space-2);
+  margin-top: var(--scx-space-3);
+  padding-top: var(--scx-space-3);
+  border-top: 1px solid var(--scx-border);
 }
 
-.scn-date-range-picker__cancel,
-.scn-date-range-picker__done {
+.scx-date-range-picker__cancel,
+.scx-date-range-picker__done {
   min-height: 2rem;
   padding:
-    var(--scn-space-1)
-    var(--scn-space-3);
-  border-radius: var(--scn-radius-md);
+    var(--scx-space-1)
+    var(--scx-space-3);
+  border-radius: var(--scx-radius-md);
   font: inherit;
-  font-size: var(--scn-font-size-sm);
+  font-size: var(--scx-font-size-sm);
   cursor: pointer;
 }
 
-.scn-date-range-picker__cancel {
-  border: 1px solid var(--scn-border);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
+.scx-date-range-picker__cancel {
+  border: 1px solid var(--scx-border);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
 
   &:hover {
-    background: var(--scn-muted);
+    background: var(--scx-muted);
   }
 }
 
-.scn-date-range-picker__done {
-  border: 1px solid var(--scn-primary);
-  background: var(--scn-primary);
-  color: var(--scn-primary-foreground);
+.scx-date-range-picker__done {
+  border: 1px solid var(--scx-primary);
+  background: var(--scx-primary);
+  color: var(--scx-primary-foreground);
 
   &:hover {
     opacity: 0.9;

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createSignal,
@@ -104,10 +104,10 @@ export const Accordion: Component<
   const id = createUniqueId()
 
   const getTriggerId = (value: string) =>
-    `scn-accordion-${id}-trigger-${value}`
+    `scx-accordion-${id}-trigger-${value}`
 
   const getContentId = (value: string) =>
-    `scn-accordion-${id}-content-${value}`
+    `scx-accordion-${id}-content-${value}`
 
   return (
     <AccordionContext.Provider
@@ -123,7 +123,7 @@ export const Accordion: Component<
       <div
         {...rest}
         class={cx(
-          'scn-accordion',
+          'scx-accordion',
           local.class,
         )}
       >

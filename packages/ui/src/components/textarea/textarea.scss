@@ -1,38 +1,38 @@
-.scn-textarea {
+﻿.scx-textarea {
   display: block;
   width: 100%;
   min-height: 6rem;
 
-  padding: var(--scn-space-3);
+  padding: var(--scx-space-3);
 
-  background: var(--scn-background);
-  color: var(--scn-foreground);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
 
-  border: 1px solid var(--scn-input);
-  border-radius: var(--scn-radius-md);
+  border: 1px solid var(--scx-input);
+  border-radius: var(--scx-radius-md);
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  line-height: var(--scn-leading-normal);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  line-height: var(--scx-leading-normal);
 
   resize: vertical;
 
   transition:
-    border-color var(--scn-duration-normal) var(--scn-ease-standard),
-    box-shadow var(--scn-duration-normal) var(--scn-ease-standard);
+    border-color var(--scx-duration-normal) var(--scx-ease-standard),
+    box-shadow var(--scx-duration-normal) var(--scx-ease-standard);
 
   &::placeholder {
-    color: var(--scn-muted-foreground);
+    color: var(--scx-muted-foreground);
   }
 
   &:hover:not(:disabled):not(:focus) {
-    border-color: var(--scn-muted-foreground);
+    border-color: var(--scx-muted-foreground);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 0;
-    border-color: var(--scn-ring);
+    border-color: var(--scx-ring);
   }
 
   &:disabled {
@@ -45,11 +45,11 @@
   }
 
   &--error {
-    border-color: var(--scn-destructive);
+    border-color: var(--scx-destructive);
 
     &:focus-visible {
-      outline-color: var(--scn-destructive);
-      border-color: var(--scn-destructive);
+      outline-color: var(--scx-destructive);
+      border-color: var(--scx-destructive);
     }
   }
 }

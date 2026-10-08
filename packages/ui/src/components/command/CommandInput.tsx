@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     createUniqueId,
     splitProps,
@@ -37,12 +37,12 @@ export const CommandInput: Component<
     const inputId = createUniqueId()
 
     return (
-        <div class="scn-command__input-wrapper">
+        <div class="scx-command__input-wrapper">
             <Search
                 size={16}
                 strokeWidth={2}
                 aria-hidden="true"
-                class="scn-command__input-icon"
+                class="scx-command__input-icon"
             />
 
             <input
@@ -54,7 +54,7 @@ export const CommandInput: Component<
                 aria-autocomplete="list"
                 aria-expanded="true"
                 class={cx(
-                    'scn-command__input',
+                    'scx-command__input',
                     local.class,
                 )}
                 value={

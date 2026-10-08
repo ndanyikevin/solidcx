@@ -1,4 +1,4 @@
-.scn-switch {
+﻿.scx-switch {
   appearance: none;
 
   position: relative;
@@ -12,17 +12,17 @@
 
   padding: 0;
 
-  background: var(--scn-muted);
+  background: var(--scx-muted);
 
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-full);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-full);
 
   cursor: pointer;
 
   transition:
-    background-color var(--scn-duration-normal) var(--scn-ease-standard),
-    border-color var(--scn-duration-normal) var(--scn-ease-standard),
-    box-shadow var(--scn-duration-normal) var(--scn-ease-standard);
+    background-color var(--scx-duration-normal) var(--scx-ease-standard),
+    border-color var(--scx-duration-normal) var(--scx-ease-standard),
+    box-shadow var(--scx-duration-normal) var(--scx-ease-standard);
 
   &::before {
     content: '';
@@ -34,34 +34,34 @@
     width: 1.125rem;
     height: 1.125rem;
 
-    border-radius: var(--scn-radius-full);
+    border-radius: var(--scx-radius-full);
 
-    background: var(--scn-background);
+    background: var(--scx-background);
 
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.15);
 
     transform: translateY(-50%);
 
     transition:
-      transform var(--scn-duration-normal) var(--scn-ease-standard),
-      background-color var(--scn-duration-normal) var(--scn-ease-standard);
+      transform var(--scx-duration-normal) var(--scx-ease-standard),
+      background-color var(--scx-duration-normal) var(--scx-ease-standard);
   }
 
   &:hover:not(:disabled) {
-    border-color: var(--scn-muted-foreground);
+    border-color: var(--scx-muted-foreground);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 
   &:checked {
-    background: var(--scn-primary);
-    border-color: var(--scn-primary);
+    background: var(--scx-primary);
+    border-color: var(--scx-primary);
 
     &::before {
-      background: var(--scn-primary-foreground);
+      background: var(--scx-primary-foreground);
       transform: translate(
         1rem,
         -50%

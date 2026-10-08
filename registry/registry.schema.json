@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://solidcx.vercel.app/schema/registry.schema.json",
   "title": "SolidCX Registry",

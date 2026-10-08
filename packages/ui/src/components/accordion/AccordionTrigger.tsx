@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { ChevronDown } from 'lucide-solid'
 import { cx } from '@solidcx/cx'
@@ -36,9 +36,9 @@ export const AccordionTrigger: Component<
     ) =>
         Array.from(
             current
-                .closest('.scn-accordion')
+                .closest('.scx-accordion')
                 ?.querySelectorAll<HTMLButtonElement>(
-                    '.scn-accordion__trigger:not(:disabled)',
+                    '.scx-accordion__trigger:not(:disabled)',
                 ) ?? [],
         )
 
@@ -97,7 +97,7 @@ export const AccordionTrigger: Component<
             aria-expanded={open()}
             aria-controls={item.contentId}
             class={cx(
-                'scn-accordion__trigger',
+                'scx-accordion__trigger',
                 local.class,
             )}
             onClick={handleClick}
@@ -110,9 +110,9 @@ export const AccordionTrigger: Component<
             <span
                 aria-hidden="true"
                 class={cx(
-                    'scn-accordion__icon',
+                    'scx-accordion__icon',
                     open() &&
-                    'scn-accordion__icon--open',
+                    'scx-accordion__icon--open',
                 )}
             >
                 <ChevronDown

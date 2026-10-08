@@ -1,12 +1,12 @@
-.scn-spinner {
+﻿.scx-spinner {
   display: inline-block;
   flex-shrink: 0;
 
-  border: 2px solid var(--scn-muted);
-  border-top-color: var(--scn-primary);
-  border-radius: var(--scn-radius-full);
+  border: 2px solid var(--scx-muted);
+  border-top-color: var(--scx-primary);
+  border-radius: var(--scx-radius-full);
 
-  animation: scn-spinner-spin 0.7s linear infinite;
+  animation: scx-spinner-spin 0.7s linear infinite;
 
   &--sm {
     width: 1rem;
@@ -25,14 +25,14 @@
   }
 }
 
-@keyframes scn-spinner-spin {
+@keyframes scx-spinner-spin {
   to {
     transform: rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scn-spinner {
+  .scx-spinner {
     animation-duration: 1.5s;
   }
 }

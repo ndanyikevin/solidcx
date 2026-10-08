@@ -1,50 +1,50 @@
-.scn-badge {
+﻿.scx-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   width: fit-content;
 
-  padding: var(--scn-space-1) var(--scn-space-2);
+  padding: var(--scx-space-1) var(--scx-space-2);
 
   border: 1px solid transparent;
-  border-radius: var(--scn-radius-full);
+  border-radius: var(--scx-radius-full);
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-xs);
-  font-weight: var(--scn-weight-medium);
-  line-height: var(--scn-leading-tight);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-xs);
+  font-weight: var(--scx-weight-medium);
+  line-height: var(--scx-leading-tight);
 
   white-space: nowrap;
 }
 
-.scn-badge--primary {
-  background: var(--scn-primary);
-  color: var(--scn-primary-foreground);
+.scx-badge--primary {
+  background: var(--scx-primary);
+  color: var(--scx-primary-foreground);
 }
 
-.scn-badge--secondary {
-  background: var(--scn-secondary);
-  color: var(--scn-secondary-foreground);
+.scx-badge--secondary {
+  background: var(--scx-secondary);
+  color: var(--scx-secondary-foreground);
 }
 
-.scn-badge--success {
-  background: var(--scn-success);
-  color: var(--scn-success-foreground);
+.scx-badge--success {
+  background: var(--scx-success);
+  color: var(--scx-success-foreground);
 }
 
-.scn-badge--warning {
-  background: var(--scn-warning);
-  color: var(--scn-warning-foreground);
+.scx-badge--warning {
+  background: var(--scx-warning);
+  color: var(--scx-warning-foreground);
 }
 
-.scn-badge--danger {
-  background: var(--scn-destructive);
-  color: var(--scn-destructive-foreground);
+.scx-badge--danger {
+  background: var(--scx-destructive);
+  color: var(--scx-destructive-foreground);
 }
 
-.scn-badge--outline {
+.scx-badge--outline {
   background: transparent;
-  color: var(--scn-foreground);
-  border-color: var(--scn-border);
+  color: var(--scx-foreground);
+  border-color: var(--scx-border);
 }

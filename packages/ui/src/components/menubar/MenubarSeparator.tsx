@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import { splitProps } from 'solid-js'
 
@@ -23,7 +23,7 @@ export const MenubarSeparator: Component<
             role="separator"
             aria-orientation="horizontal"
             class={cx(
-                'scn-menubar__separator',
+                'scx-menubar__separator',
                 local.class,
             )}
         >

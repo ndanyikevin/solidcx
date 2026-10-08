@@ -1,109 +1,109 @@
-.scn-command {
+﻿.scx-command {
   width: 100%;
   overflow: hidden;
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-lg);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
-  box-shadow: var(--scn-shadow-lg);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-lg);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
+  box-shadow: var(--scx-shadow-lg);
 }
 
-.scn-command__input-wrapper {
-  border-bottom: 1px solid var(--scn-border);
+.scx-command__input-wrapper {
+  border-bottom: 1px solid var(--scx-border);
 }
 
-.scn-command__input {
+.scx-command__input {
   width: 100%;
   height: 3rem;
-  padding: 0 var(--scn-space-4);
+  padding: 0 var(--scx-space-4);
   border: 0;
   outline: none;
   background: transparent;
-  color: var(--scn-foreground);
+  color: var(--scx-foreground);
   font: inherit;
 
   &::placeholder {
-    color: var(--scn-muted-foreground);
+    color: var(--scx-muted-foreground);
   }
 
   &:focus {
     box-shadow: inset 0 -2px 0
-      var(--scn-ring);
+      var(--scx-ring);
   }
 }
 
-.scn-command__list {
+.scx-command__list {
   max-height: 20rem;
   overflow-y: auto;
-  padding: var(--scn-space-2);
+  padding: var(--scx-space-2);
 }
 
-.scn-command__group {
-  padding: var(--scn-space-1) 0;
+.scx-command__group {
+  padding: var(--scx-space-1) 0;
 }
 
-.scn-command__group-heading {
-  padding: var(--scn-space-2)
-    var(--scn-space-3);
-  font-size: var(--scn-font-size-xs);
+.scx-command__group-heading {
+  padding: var(--scx-space-2)
+    var(--scx-space-3);
+  font-size: var(--scx-font-size-xs);
   font-weight: 600;
-  color: var(--scn-muted-foreground);
+  color: var(--scx-muted-foreground);
 }
 
-.scn-command__item {
+.scx-command__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 2.25rem;
-  padding: var(--scn-space-2)
-    var(--scn-space-3);
-  border-radius: var(--scn-radius-md);
+  padding: var(--scx-space-2)
+    var(--scx-space-3);
+  border-radius: var(--scx-radius-md);
   cursor: pointer;
   outline: none;
 
   &:hover,
   &:focus,
   &[aria-selected='true'] {
-    background: var(--scn-muted);
+    background: var(--scx-muted);
   }
 
   &:focus-visible {
     box-shadow: inset 0 0 0 2px
-      var(--scn-ring);
+      var(--scx-ring);
   }
 }
 
-.scn-command__item--disabled {
+.scx-command__item--disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-.scn-command__check {
-  font-size: var(--scn-font-size-sm);
-  color: var(--scn-primary);
+.scx-command__check {
+  font-size: var(--scx-font-size-sm);
+  color: var(--scx-primary);
 }
 
-.scn-command__empty {
-  padding: var(--scn-space-8)
-    var(--scn-space-4);
+.scx-command__empty {
+  padding: var(--scx-space-8)
+    var(--scx-space-4);
   text-align: center;
-  font-size: var(--scn-font-size-sm);
-  color: var(--scn-muted-foreground);
+  font-size: var(--scx-font-size-sm);
+  color: var(--scx-muted-foreground);
 }
 
-.scn-command__input-wrapper {
+.scx-command__input-wrapper {
   position: relative;
 }
 
-.scn-command__input-icon {
+.scx-command__input-icon {
   position: absolute;
   top: 50%;
-  left: var(--scn-space-3);
+  left: var(--scx-space-3);
   transform: translateY(-50%);
-  color: var(--scn-muted-foreground);
+  color: var(--scx-muted-foreground);
   pointer-events: none;
 }
 
-.scn-command__input {
+.scx-command__input {
   padding-left: 2.5rem;
 }

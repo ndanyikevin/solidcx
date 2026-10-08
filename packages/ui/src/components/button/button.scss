@@ -1,24 +1,24 @@
-.scn-button {
+﻿.scx-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
 
   border: 1px solid transparent;
-  border-radius: var(--scn-radius-md);
+  border-radius: var(--scx-radius-md);
 
-  font-family: var(--scn-font-sans);
-  font-weight: var(--scn-weight-medium);
-  line-height: var(--scn-leading-normal);
+  font-family: var(--scx-font-sans);
+  font-weight: var(--scx-weight-medium);
+  line-height: var(--scx-leading-normal);
 
   cursor: pointer;
   transition:
-    background-color var(--scn-duration-normal) var(--scn-ease-standard),
-    color var(--scn-duration-normal) var(--scn-ease-standard),
-    border-color var(--scn-duration-normal) var(--scn-ease-standard);
+    background-color var(--scx-duration-normal) var(--scx-ease-standard),
+    color var(--scx-duration-normal) var(--scx-ease-standard),
+    border-color var(--scx-duration-normal) var(--scx-ease-standard);
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 
@@ -29,25 +29,25 @@
 
   &--sm {
     min-height: 2rem;
-    padding: 0 var(--scn-space-3);
-    font-size: var(--scn-text-sm);
+    padding: 0 var(--scx-space-3);
+    font-size: var(--scx-text-sm);
   }
 
   &--md {
     min-height: 2.5rem;
-    padding: 0 var(--scn-space-4);
-    font-size: var(--scn-text-sm);
+    padding: 0 var(--scx-space-4);
+    font-size: var(--scx-text-sm);
   }
 
   &--lg {
     min-height: 2.75rem;
-    padding: 0 var(--scn-space-5);
-    font-size: var(--scn-text-base);
+    padding: 0 var(--scx-space-5);
+    font-size: var(--scx-text-base);
   }
 
   &--primary {
-    background: var(--scn-primary);
-    color: var(--scn-primary-foreground);
+    background: var(--scx-primary);
+    color: var(--scx-primary-foreground);
 
     &:hover:not(:disabled) {
       filter: brightness(0.92);
@@ -55,36 +55,36 @@
   }
 
   &--secondary {
-    background: var(--scn-secondary);
-    color: var(--scn-secondary-foreground);
+    background: var(--scx-secondary);
+    color: var(--scx-secondary-foreground);
 
     &:hover:not(:disabled) {
-      background: var(--scn-muted);
+      background: var(--scx-muted);
     }
   }
 
   &--outline {
     background: transparent;
-    color: var(--scn-foreground);
-    border-color: var(--scn-border);
+    color: var(--scx-foreground);
+    border-color: var(--scx-border);
 
     &:hover:not(:disabled) {
-      background: var(--scn-muted);
+      background: var(--scx-muted);
     }
   }
 
   &--ghost {
     background: transparent;
-    color: var(--scn-foreground);
+    color: var(--scx-foreground);
 
     &:hover:not(:disabled) {
-      background: var(--scn-muted);
+      background: var(--scx-muted);
     }
   }
 
   &--danger {
-    background: var(--scn-destructive);
-    color: var(--scn-destructive-foreground);
+    background: var(--scx-destructive);
+    color: var(--scx-destructive-foreground);
 
     &:hover:not(:disabled) {
       filter: brightness(0.92);

@@ -1,44 +1,44 @@
-.scn-dialog {
+﻿.scx-dialog {
   display: inline-flex;
 }
 
-.scn-dialog__trigger {
+.scx-dialog__trigger {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  background: var(--scn-primary);
-  color: var(--scn-primary-foreground);
+  background: var(--scx-primary);
+  color: var(--scx-primary-foreground);
 
-  border: 1px solid var(--scn-primary);
-  border-radius: var(--scn-radius-md);
+  border: 1px solid var(--scx-primary);
+  border-radius: var(--scx-radius-md);
 
-  padding: 0 var(--scn-space-4);
+  padding: 0 var(--scx-space-4);
   min-height: 2.5rem;
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-medium);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-medium);
 
   cursor: pointer;
 
   transition:
-    background var(--scn-duration-fast)
-      var(--scn-ease-standard),
-    border-color var(--scn-duration-fast)
-      var(--scn-ease-standard);
+    background var(--scx-duration-fast)
+      var(--scx-ease-standard),
+    border-color var(--scx-duration-fast)
+      var(--scx-ease-standard);
 
   &:hover {
     opacity: 0.9;
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 }
 
-.scn-dialog__overlay {
+.scx-dialog__overlay {
   position: fixed;
   inset: 0;
   z-index: 100;
@@ -47,72 +47,72 @@
   align-items: center;
   justify-content: center;
 
-  padding: var(--scn-space-4);
+  padding: var(--scx-space-4);
 
   background: rgb(0 0 0 / 0.6);
 
-  animation: scn-dialog-overlay-in
-    var(--scn-duration-fast)
-    var(--scn-ease-standard);
+  animation: scx-dialog-overlay-in
+    var(--scx-duration-fast)
+    var(--scx-ease-standard);
 }
 
-.scn-dialog__content {
+.scx-dialog__content {
   width: min(100%, 32rem);
   max-height: calc(100vh - 2rem);
   overflow-y: auto;
 
-  background: var(--scn-background);
-  color: var(--scn-foreground);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
 
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-lg);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-lg);
 
-  padding: var(--scn-space-6);
+  padding: var(--scx-space-6);
 
   box-shadow:
     0 20px 25px rgb(0 0 0 / 0.12),
     0 8px 10px rgb(0 0 0 / 0.08);
 
-  animation: scn-dialog-content-in
-    var(--scn-duration-fast)
-    var(--scn-ease-standard);
+  animation: scx-dialog-content-in
+    var(--scx-duration-fast)
+    var(--scx-ease-standard);
 
   &:focus {
     outline: none;
   }
 }
 
-.scn-dialog__close {
+.scx-dialog__close {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   min-height: 2.25rem;
-  padding: 0 var(--scn-space-3);
+  padding: 0 var(--scx-space-3);
 
-  background: var(--scn-secondary);
-  color: var(--scn-secondary-foreground);
+  background: var(--scx-secondary);
+  color: var(--scx-secondary-foreground);
 
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-md);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-md);
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-medium);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-medium);
 
   cursor: pointer;
 
   &:hover {
-    background: var(--scn-muted);
+    background: var(--scx-muted);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 2px;
   }
 }
 
-@keyframes scn-dialog-overlay-in {
+@keyframes scx-dialog-overlay-in {
   from {
     opacity: 0;
   }
@@ -122,7 +122,7 @@
   }
 }
 
-@keyframes scn-dialog-content-in {
+@keyframes scx-dialog-content-in {
   from {
     opacity: 0;
     transform: translateY(8px) scale(0.98);
@@ -135,8 +135,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scn-dialog__overlay,
-  .scn-dialog__content {
+  .scx-dialog__overlay,
+  .scx-dialog__content {
     animation: none;
   }
 }

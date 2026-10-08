@@ -1,15 +1,15 @@
-.scn-skeleton {
+﻿.scx-skeleton {
   width: 100%;
   height: 1rem;
 
-  background: var(--scn-muted);
-  border-radius: var(--scn-radius-md);
+  background: var(--scx-muted);
+  border-radius: var(--scx-radius-md);
 
-  animation: scn-skeleton-pulse
-    1.5s var(--scn-ease-in-out, ease-in-out) infinite;
+  animation: scx-skeleton-pulse
+    1.5s var(--scx-ease-in-out, ease-in-out) infinite;
 }
 
-@keyframes scn-skeleton-pulse {
+@keyframes scx-skeleton-pulse {
   50% {
     opacity: 0.5;
   }

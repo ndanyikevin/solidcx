@@ -1,8 +1,8 @@
-{
+﻿{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://solidcn.dev/schema/registry.json",
-  "title": "SolidCN Registry",
-  "description": "Schema for SolidCN component registry entries.",
+  "$id": "https://solidcx.vercel.app/schema/registry.json",
+  "title": "SolidCX Registry",
+  "description": "Schema for SolidCX component registry entries.",
   "type": "object",
   "required": [
     "name",

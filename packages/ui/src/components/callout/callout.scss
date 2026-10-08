@@ -1,92 +1,92 @@
-.scn-callout {
+﻿.scx-callout {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-1);
+  gap: var(--scx-space-1);
   width: 100%;
-  padding: var(--scn-space-4);
-  background: var(--scn-muted);
-  color: var(--scn-foreground);
-  border: 1px solid var(--scn-border);
-  border-left: 3px solid var(--scn-border);
-  border-radius: var(--scn-radius-md);
+  padding: var(--scx-space-4);
+  background: var(--scx-muted);
+  color: var(--scx-foreground);
+  border: 1px solid var(--scx-border);
+  border-left: 3px solid var(--scx-border);
+  border-radius: var(--scx-radius-md);
 }
 
-.scn-callout__title {
-  color: var(--scn-foreground);
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-semibold);
+.scx-callout__title {
+  color: var(--scx-foreground);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-semibold);
   line-height: 1.4;
 }
 
-.scn-callout__description {
-  color: var(--scn-muted-foreground);
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-sm);
+.scx-callout__description {
+  color: var(--scx-muted-foreground);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-sm);
   line-height: 1.5;
 }
 
-.scn-callout--info {
+.scx-callout--info {
   background: color-mix(
     in srgb,
-    var(--scn-ring) 8%,
-    var(--scn-background)
+    var(--scx-ring) 8%,
+    var(--scx-background)
   );
 
   border-color: color-mix(
     in srgb,
-    var(--scn-ring) 35%,
-    var(--scn-border)
+    var(--scx-ring) 35%,
+    var(--scx-border)
   );
 
-  border-left-color: var(--scn-ring);
+  border-left-color: var(--scx-ring);
 }
 
-.scn-callout--success {
+.scx-callout--success {
   background: color-mix(
     in srgb,
-    var(--scn-success) 8%,
-    var(--scn-background)
+    var(--scx-success) 8%,
+    var(--scx-background)
   );
 
   border-color: color-mix(
     in srgb,
-    var(--scn-success) 35%,
-    var(--scn-border)
+    var(--scx-success) 35%,
+    var(--scx-border)
   );
 
-  border-left-color: var(--scn-success);
+  border-left-color: var(--scx-success);
 }
 
-.scn-callout--warning {
+.scx-callout--warning {
   background: color-mix(
     in srgb,
-    var(--scn-warning) 8%,
-    var(--scn-background)
+    var(--scx-warning) 8%,
+    var(--scx-background)
   );
 
   border-color: color-mix(
     in srgb,
-    var(--scn-warning) 35%,
-    var(--scn-border)
+    var(--scx-warning) 35%,
+    var(--scx-border)
   );
 
-  border-left-color: var(--scn-warning);
+  border-left-color: var(--scx-warning);
 }
 
-.scn-callout--danger {
+.scx-callout--danger {
   background: color-mix(
     in srgb,
-    var(--scn-destructive) 8%,
-    var(--scn-background)
+    var(--scx-destructive) 8%,
+    var(--scx-background)
   );
 
   border-color: color-mix(
     in srgb,
-    var(--scn-destructive) 35%,
-    var(--scn-border)
+    var(--scx-destructive) 35%,
+    var(--scx-border)
   );
 
-  border-left-color: var(--scn-destructive);
+  border-left-color: var(--scx-destructive);
 }

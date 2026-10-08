@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import {
     createSignal,
     Show,
@@ -28,7 +28,7 @@ export const SidebarMenu: Component<
         <ul
             {...rest}
             class={cx(
-                'scn-sidebar__menu',
+                'scx-sidebar__menu',
                 local.class,
             )}
         >
@@ -49,7 +49,7 @@ export const SidebarMenuItem: Component<
         <li
             {...rest}
             class={cx(
-                'scn-sidebar__menu-item',
+                'scx-sidebar__menu-item',
                 local.class,
             )}
         >
@@ -77,11 +77,11 @@ export const SidebarMenuButton: Component<
         <a
             {...rest}
             class={cx(
-                'scn-sidebar__menu-button',
+                'scx-sidebar__menu-button',
                 local.active &&
-                'scn-sidebar__menu-button--active',
+                'scx-sidebar__menu-button--active',
                 sidebar.collapsed() &&
-                'scn-sidebar__menu-button--collapsed',
+                'scx-sidebar__menu-button--collapsed',
                 local.class,
             )}
             aria-current={
@@ -139,13 +139,13 @@ export const SidebarMenuCollapsible: Component<
             {...rest}
             data-open={isOpen() || undefined}
             class={cx(
-                'scn-sidebar__menu-collapsible',
+                'scx-sidebar__menu-collapsible',
                 local.class,
             )}
         >
             <button
                 type="button"
-                class="scn-sidebar__menu-collapsible-trigger"
+                class="scx-sidebar__menu-collapsible-trigger"
                 aria-expanded={isOpen()}
                 onClick={toggle}
             >
@@ -153,7 +153,7 @@ export const SidebarMenuCollapsible: Component<
             </button>
 
             <Show when={isOpen()}>
-                <div class="scn-sidebar__menu-collapsible-content">
+                <div class="scx-sidebar__menu-collapsible-content">
                     {local.children}
                 </div>
             </Show>

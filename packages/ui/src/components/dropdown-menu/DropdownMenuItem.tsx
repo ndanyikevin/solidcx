@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -27,7 +27,7 @@ export const DropdownMenuItem: Component<
             type="button"
             role="menuitem"
             class={cx(
-                'scn-dropdown-menu__item',
+                'scx-dropdown-menu__item',
                 local.class,
             )}
             onClick={() => {

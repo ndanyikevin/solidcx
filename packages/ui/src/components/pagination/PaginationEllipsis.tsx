@@ -1,4 +1,4 @@
-
+﻿
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { MoreHorizontal } from 'lucide-solid'
@@ -24,7 +24,7 @@ export const PaginationEllipsis: Component<
       {...rest}
       aria-hidden="true"
       class={cx(
-        'scn-pagination__ellipsis',
+        'scx-pagination__ellipsis',
         local.class,
       )}
     >

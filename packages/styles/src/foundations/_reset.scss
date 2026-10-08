@@ -1,4 +1,4 @@
-*,
+﻿*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -13,12 +13,12 @@ body {
   margin: 0;
   min-height: 100vh;
 
-  font-family: var(--scn-font-sans);
-  font-size: var(--scn-text-base);
-  line-height: var(--scn-leading-normal);
+  font-family: var(--scx-font-sans);
+  font-size: var(--scx-text-base);
+  line-height: var(--scx-leading-normal);
 
-  background: var(--scn-background);
-  color: var(--scn-foreground);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
 }
 
 button,

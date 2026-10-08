@@ -1,27 +1,27 @@
-.scn-hover-card {
+﻿.scx-hover-card {
   position: relative;
   width: fit-content;
 }
 
-.scn-hover-card__trigger {
-  color: var(--scn-foreground);
+.scx-hover-card__trigger {
+  color: var(--scx-foreground);
   text-decoration: underline;
-  text-decoration-color: var(--scn-border);
+  text-decoration-color: var(--scx-border);
   text-underline-offset: 3px;
   cursor: pointer;
   transition:
     color
-    var(--scn-duration-fast)
-    var(--scn-ease-standard);
+    var(--scx-duration-fast)
+    var(--scx-ease-standard);
 
   &:hover {
-    color: var(--scn-primary);
+    color: var(--scx-primary);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--scn-ring);
+    outline: 2px solid var(--scx-ring);
     outline-offset: 3px;
-    border-radius: var(--scn-radius-sm);
+    border-radius: var(--scx-radius-sm);
   }
 
   &[aria-disabled='true'] {
@@ -30,22 +30,22 @@
   }
 }
 
-.scn-hover-card__content {
+.scx-hover-card__content {
   position: absolute;
   z-index: 100;
-  top: calc(100% + var(--scn-space-2));
+  top: calc(100% + var(--scx-space-2));
   left: 0;
   width: min(
     20rem,
     calc(100vw - 2rem)
   );
-  padding: var(--scn-space-4);
-  border: 1px solid var(--scn-border);
-  border-radius: var(--scn-radius-lg);
-  background: var(--scn-background);
-  color: var(--scn-foreground);
-  box-shadow: var(--scn-shadow-lg);
-  font-size: var(--scn-font-size-sm);
+  padding: var(--scx-space-4);
+  border: 1px solid var(--scx-border);
+  border-radius: var(--scx-radius-lg);
+  background: var(--scx-background);
+  color: var(--scx-foreground);
+  box-shadow: var(--scx-shadow-lg);
+  font-size: var(--scx-font-size-sm);
   line-height: 1.5;
 
   &[hidden] {
@@ -54,12 +54,12 @@
 }
 
 @media (max-width: 640px) {
-  .scn-hover-card__content {
+  .scx-hover-card__content {
     position: fixed;
     top: auto;
-    right: var(--scn-space-4);
-    bottom: var(--scn-space-4);
-    left: var(--scn-space-4);
+    right: var(--scx-space-4);
+    bottom: var(--scx-space-4);
+    left: var(--scx-space-4);
     width: auto;
   }
 }

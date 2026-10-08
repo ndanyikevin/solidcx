@@ -1,4 +1,4 @@
-@import '@solidcx/styles/dist/index.css';
+﻿@import '@solidcx/styles/dist/index.css';
 
 .docs-page {
   width: min(1100px, calc(100% - 2rem));
@@ -21,57 +21,57 @@
 
 .hero p {
   margin-top: 1.5rem;
-  color: var(--scn-muted-foreground);
-  font-size: var(--scn-text-lg);
-  line-height: var(--scn-leading-relaxed);
+  color: var(--scx-muted-foreground);
+  font-size: var(--scx-text-lg);
+  line-height: var(--scx-leading-relaxed);
 }
 
 .hero-actions {
   display: flex;
   justify-content: center;
-  gap: var(--scn-space-3);
+  gap: var(--scx-space-3);
   margin-top: 2rem;
 }
 
 .component-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--scn-space-6);
+  gap: var(--scx-space-6);
 }
 
 .showcase-card {
-  padding: var(--scn-space-6);
+  padding: var(--scx-space-6);
 }
 
 .showcase-card h2 {
-  margin-bottom: var(--scn-space-6);
-  font-size: var(--scn-text-xl);
+  margin-bottom: var(--scx-space-6);
+  font-size: var(--scx-text-xl);
 }
 
 .form-stack,
 .option-stack {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-4);
+  gap: var(--scx-space-4);
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
 }
 
 .option {
   display: flex;
   align-items: center;
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
   cursor: pointer;
 }
 
 .radio-group {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-3);
+  gap: var(--scx-space-3);
 }
 
 @media (max-width: 700px) {
@@ -93,15 +93,15 @@
   top: 0;
   z-index: 10;
 
-  background: var(--scn-background);
+  background: var(--scx-background);
 
-  border-bottom: 1px solid var(--scn-border);
+  border-bottom: 1px solid var(--scx-border);
 }
 
 .app-nav {
   display: flex;
   align-items: center;
-  gap: var(--scn-space-6);
+  gap: var(--scx-space-6);
 
   width: min(1200px, calc(100% - 2rem));
   height: 4rem;
@@ -117,23 +117,23 @@
 
   height: 100%;
 
-  color: var(--scn-muted-foreground);
+  color: var(--scx-muted-foreground);
 
-  font-size: var(--scn-text-sm);
-  font-weight: var(--scn-weight-medium);
+  font-size: var(--scx-text-sm);
+  font-weight: var(--scx-weight-medium);
 
   transition:
-    color var(--scn-duration-normal) var(--scn-ease-standard);
+    color var(--scx-duration-normal) var(--scx-ease-standard);
 }
 
 .app-nav__link:hover {
-  color: var(--scn-foreground);
+  color: var(--scx-foreground);
 }
 
 .app-nav__link:focus-visible {
-  outline: 2px solid var(--scn-ring);
+  outline: 2px solid var(--scx-ring);
   outline-offset: 4px;
-  border-radius: var(--scn-radius-sm);
+  border-radius: var(--scx-radius-sm);
 }
 
 .app-main {
@@ -141,43 +141,43 @@
 
   margin: 0 auto;
 
-  padding: var(--scn-space-8) 0;
+  padding: var(--scx-space-8) 0;
 }
 
 @media (max-width: 640px) {
   .app-nav {
-    gap: var(--scn-space-4);
+    gap: var(--scx-space-4);
   }
 
   .app-main {
-    padding: var(--scn-space-6) 0;
+    padding: var(--scx-space-6) 0;
   }
 }
 
 .test-page {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-8);
+  gap: var(--scx-space-8);
 }
 
 .test-section {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-3);
+  gap: var(--scx-space-3);
 }
 
 .test-options {
   display: flex;
   flex-direction: column;
-  gap: var(--scn-space-3);
+  gap: var(--scx-space-3);
 }
 
 .test-option {
   display: flex;
   align-items: center;
-  gap: var(--scn-space-2);
+  gap: var(--scx-space-2);
 
-  color: var(--scn-foreground);
+  color: var(--scx-foreground);
 
   cursor: pointer;
 }

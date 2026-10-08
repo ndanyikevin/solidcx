@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createMemo,
   splitProps,
@@ -88,7 +88,7 @@ export const ProgressCircle: Component<
     <div
       {...rest}
       class={cx(
-        'scn-progress-circle',
+        'scx-progress-circle',
         local.class,
       )}
       role="progressbar"
@@ -98,14 +98,14 @@ export const ProgressCircle: Component<
       aria-label={local.label}
     >
       <svg
-        class="scn-progress-circle__svg"
+        class="scx-progress-circle__svg"
         viewBox={viewBox()}
         width={size()}
         height={size()}
         aria-hidden="true"
       >
         <circle
-          class="scn-progress-circle__track"
+          class="scx-progress-circle__track"
           cx={size() / 2}
           cy={size() / 2}
           r={radius()}
@@ -114,7 +114,7 @@ export const ProgressCircle: Component<
         />
 
         <circle
-          class="scn-progress-circle__indicator"
+          class="scx-progress-circle__indicator"
           cx={size() / 2}
           cy={size() / 2}
           r={radius()}
@@ -125,9 +125,9 @@ export const ProgressCircle: Component<
         />
       </svg>
 
-      <div class="scn-progress-circle__content">
+      <div class="scx-progress-circle__content">
         {local.showValue !== false && (
-          <span class="scn-progress-circle__value">
+          <span class="scx-progress-circle__value">
             {Math.round(percentage())}%
           </span>
         )}

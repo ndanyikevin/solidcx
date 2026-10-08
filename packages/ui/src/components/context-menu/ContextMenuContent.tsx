@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 
 import {
     createEffect,
@@ -241,10 +241,10 @@ export const ContextMenuContent: Component<
                 role="menu"
                 tabindex="-1"
                 aria-orientation="vertical"
-                data-scn-context-menu-content
+                data-scx-context-menu-content
                 data-state="open"
                 class={cx(
-                    'scn-context-menu__content',
+                    'scx-context-menu__content',
                     local.class,
                 )}
                 style={{

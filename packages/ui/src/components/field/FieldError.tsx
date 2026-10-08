@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     Show,
     splitProps,
@@ -33,7 +33,7 @@ export const FieldError: Component<
                 {...rest}
                 role="alert"
                 class={cx(
-                    'scn-field__error',
+                    'scx-field__error',
                     local.class,
                 )}
             >
@@ -47,7 +47,7 @@ export const FieldError: Component<
                 >
                     {local.messages?.map(
                         (message) => (
-                            <span class="scn-field__error-message">
+                            <span class="scx-field__error-message">
                                 {message}
                             </span>
                         ),

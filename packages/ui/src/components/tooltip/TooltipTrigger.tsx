@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -27,7 +27,7 @@ export const TooltipTrigger: Component<
             type="button"
             aria-describedby={tooltip.contentId}
             class={cx(
-                'scn-tooltip__trigger',
+                'scx-tooltip__trigger',
                 local.class,
             )}
             onMouseEnter={() => tooltip.setOpen(true)}

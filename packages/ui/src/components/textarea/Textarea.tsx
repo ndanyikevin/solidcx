@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -22,8 +22,8 @@ export const Textarea: Component<TextareaProps> = (props) => {
         <textarea
             {...rest}
             class={cx(
-                'scn-textarea',
-                `scn-textarea--${local.variant ?? 'default'}`,
+                'scx-textarea',
+                `scx-textarea--${local.variant ?? 'default'}`,
                 local.class,
             )}
         />

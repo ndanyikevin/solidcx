@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -29,7 +29,7 @@ export const DialogTrigger: Component<
             aria-expanded={dialog.open()}
             aria-controls={dialog.contentId}
             class={cx(
-                'scn-dialog__trigger',
+                'scx-dialog__trigger',
                 local.class,
             )}
             onClick={() => {

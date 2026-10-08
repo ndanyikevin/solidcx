@@ -1,4 +1,4 @@
-
+﻿
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { ChevronDown } from 'lucide-solid'
@@ -57,7 +57,7 @@ export const DropdownMenuTrigger: Component<
       aria-expanded={menu.open()}
       aria-controls={menu.contentId}
       class={cx(
-        'scn-dropdown-menu__trigger',
+        'scx-dropdown-menu__trigger',
         local.class,
       )}
       onClick={toggle}
@@ -72,9 +72,9 @@ export const DropdownMenuTrigger: Component<
         strokeWidth={2}
         aria-hidden="true"
         class={cx(
-          'scn-dropdown-menu__icon',
+          'scx-dropdown-menu__icon',
           menu.open() &&
-            'scn-dropdown-menu__icon--open',
+            'scx-dropdown-menu__icon--open',
         )}
       />
     </button>

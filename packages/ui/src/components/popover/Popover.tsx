@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createSignal,
@@ -61,12 +61,12 @@ export const Popover: Component<PopoverProps> = (
       value={{
         open,
         setOpen,
-        contentId: `scn-popover-${id}`,
+        contentId: `scx-popover-${id}`,
       }}
     >
       <div
         {...rest}
-        class={cx('scn-popover', local.class)}
+        class={cx('scx-popover', local.class)}
       >
         {local.children}
       </div>

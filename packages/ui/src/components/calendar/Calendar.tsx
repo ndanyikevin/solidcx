@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createEffect,
   createMemo,
@@ -561,14 +561,14 @@ export const Calendar: Component<
     <div
       {...rest}
       class={cx(
-        'scn-calendar',
+        'scx-calendar',
         local.class,
       )}
     >
-      <div class="scn-calendar__header">
+      <div class="scx-calendar__header">
         <button
           type="button"
-          class="scn-calendar__nav"
+          class="scx-calendar__nav"
           aria-label={
             view() === 'days'
               ? 'Previous month'
@@ -604,7 +604,7 @@ export const Calendar: Component<
         >
           <button
             type="button"
-            class="scn-calendar__heading"
+            class="scx-calendar__heading"
             onClick={() =>
               setView('months')
             }
@@ -623,7 +623,7 @@ export const Calendar: Component<
         >
           <button
             type="button"
-            class="scn-calendar__heading"
+            class="scx-calendar__heading"
             onClick={() =>
               setView('years')
             }
@@ -640,7 +640,7 @@ export const Calendar: Component<
         >
           <button
             type="button"
-            class="scn-calendar__heading"
+            class="scx-calendar__heading"
             aria-label="Current decade"
           >
             {decadeStart()}–
@@ -650,7 +650,7 @@ export const Calendar: Component<
 
         <button
           type="button"
-          class="scn-calendar__nav"
+          class="scx-calendar__nav"
           aria-label={
             view() === 'days'
               ? 'Next month'
@@ -686,7 +686,7 @@ export const Calendar: Component<
         }
       >
         <div
-          class="scn-calendar__weekdays"
+          class="scx-calendar__weekdays"
           aria-hidden="true"
         >
           <For each={WEEKDAYS}>
@@ -699,7 +699,7 @@ export const Calendar: Component<
         </div>
 
         <div
-          class="scn-calendar__grid"
+          class="scx-calendar__grid"
           role="grid"
           aria-label={formatMonth(
             month(),
@@ -789,21 +789,21 @@ export const Calendar: Component<
                       : -1
                   }
                   class={cx(
-                    'scn-calendar__day',
+                    'scx-calendar__day',
                     outsideMonth &&
-                    'scn-calendar__day--outside',
+                    'scx-calendar__day--outside',
                     selected() &&
-                    'scn-calendar__day--selected',
+                    'scx-calendar__day--selected',
                     rangeStart &&
-                    'scn-calendar__day--range-start',
+                    'scx-calendar__day--range-start',
                     rangeEnd &&
-                    'scn-calendar__day--range-end',
+                    'scx-calendar__day--range-end',
                     inRange &&
-                    'scn-calendar__day--in-range',
+                    'scx-calendar__day--in-range',
                     isToday &&
-                    'scn-calendar__day--today',
+                    'scx-calendar__day--today',
                     disabled &&
-                    'scn-calendar__day--disabled',
+                    'scx-calendar__day--disabled',
                   )}
                   onClick={() =>
                     selectDate(date)
@@ -829,7 +829,7 @@ export const Calendar: Component<
         }
       >
         <div
-          class="scn-calendar__month-grid"
+          class="scx-calendar__month-grid"
           role="grid"
           aria-label={`Select month for ${currentYear()}`}
         >
@@ -841,10 +841,10 @@ export const Calendar: Component<
               <button
                 type="button"
                 class={cx(
-                  'scn-calendar__month-option',
+                  'scx-calendar__month-option',
                   index() ===
                   currentMonth() &&
-                  'scn-calendar__month-option--selected',
+                  'scx-calendar__month-option--selected',
                 )}
                 onClick={() =>
                   setMonthValue(
@@ -865,7 +865,7 @@ export const Calendar: Component<
         }
       >
         <div
-          class="scn-calendar__year-grid"
+          class="scx-calendar__year-grid"
           role="grid"
           aria-label="Select year"
         >
@@ -876,16 +876,16 @@ export const Calendar: Component<
               <button
                 type="button"
                 class={cx(
-                  'scn-calendar__year-option',
+                  'scx-calendar__year-option',
                   year ===
                   currentYear() &&
-                  'scn-calendar__year-option--selected',
+                  'scx-calendar__year-option--selected',
                   year ===
                   decadeStart() - 1 &&
-                  'scn-calendar__year-option--outside',
+                  'scx-calendar__year-option--outside',
                   year ===
                   decadeStart() + 10 &&
-                  'scn-calendar__year-option--outside',
+                  'scx-calendar__year-option--outside',
                 )}
                 onClick={() =>
                   setYear(year)
@@ -898,10 +898,10 @@ export const Calendar: Component<
         </div>
       </Show>
 
-      <div class="scn-calendar__footer">
+      <div class="scx-calendar__footer">
         <button
           type="button"
-          class="scn-calendar__today"
+          class="scx-calendar__today"
           onClick={goToToday}
         >
           Today

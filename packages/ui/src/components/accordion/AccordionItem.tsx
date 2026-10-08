@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     createContext,
     createUniqueId,
@@ -60,7 +60,7 @@ export const AccordionItem: Component<
             <div
                 {...rest}
                 class={cx(
-                    'scn-accordion__item',
+                    'scx-accordion__item',
                     local.class,
                 )}
             >

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     createUniqueId,
     Show,
@@ -72,9 +72,9 @@ export const CommandItem: Component<
                     local.disabled ? -1 : 0
                 }
                 class={cx(
-                    'scn-command__item',
+                    'scx-command__item',
                     local.disabled &&
-                    'scn-command__item--disabled',
+                    'scx-command__item--disabled',
                     local.class,
                 )}
                 onClick={handleClick}
@@ -98,7 +98,7 @@ export const CommandItem: Component<
                 >
                     <span
                         aria-hidden="true"
-                        class="scn-command__check"
+                        class="scx-command__check"
                     >
                         <Check
                             size={16}

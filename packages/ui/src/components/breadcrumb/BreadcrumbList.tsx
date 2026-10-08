@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -23,7 +23,7 @@ export const BreadcrumbList: Component<
         <ol
             {...rest}
             class={cx(
-                'scn-breadcrumb__list',
+                'scx-breadcrumb__list',
                 local.class,
             )}
         >

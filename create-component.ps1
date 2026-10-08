@@ -1,4 +1,4 @@
-param(
+﻿param(
   [Parameter(Mandatory = $true)]
   [string]$Name
 )
@@ -16,7 +16,7 @@ New-Item -ItemType Directory -Force -Path $ComponentDir | Out-Null
 @"
 import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
-import { cx } from '@solidcn/cx'
+import { cx } from '@solidcx/cx'
 
 import './$Name.scss'
 
@@ -31,7 +31,7 @@ export const ${PascalName}: Component<${PascalName}Props> = (props) => {
   return (
     <div
       {...rest}
-      class={cx('scn-$Name', local.class)}
+      class={cx('scx-$Name', local.class)}
     />
   )
 }
@@ -39,7 +39,7 @@ export const ${PascalName}: Component<${PascalName}Props> = (props) => {
 
 # Create styles
 @"
-.scn-$Name {
+.scx-$Name {
 }
 "@ | Set-Content "$ComponentDir/$Name.scss"
 

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -22,7 +22,7 @@ export const CommandList: Component<
             {...rest}
             role="listbox"
             class={cx(
-                'scn-command__list',
+                'scx-command__list',
                 local.class,
             )}
         >

@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import { splitProps } from 'solid-js'
 import { cx } from '@solidcx/cx'
 
@@ -32,9 +32,9 @@ export const Button: Component<ButtonProps> = (props) => {
         <button
             {...rest}
             class={cx(
-                'scn-button',
-                `scn-button--${local.variant ?? 'primary'}`,
-                `scn-button--${local.size ?? 'md'}`,
+                'scx-button',
+                `scx-button--${local.variant ?? 'primary'}`,
+                `scx-button--${local.size ?? 'md'}`,
                 local.class,
             )}
         >

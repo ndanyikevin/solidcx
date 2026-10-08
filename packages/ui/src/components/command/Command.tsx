@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createSignal,
@@ -103,7 +103,7 @@ export const Command: Component<CommandProps> = (
         {...rest}
         role="application"
         class={cx(
-          'scn-command',
+          'scx-command',
           local.class,
         )}
       >

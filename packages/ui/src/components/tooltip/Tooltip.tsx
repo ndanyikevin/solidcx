@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
   createContext,
   createSignal,
@@ -40,12 +40,12 @@ export const Tooltip: Component<TooltipProps> = (
       value={{
         open,
         setOpen,
-        contentId: `scn-tooltip-${contentId}`,
+        contentId: `scx-tooltip-${contentId}`,
       }}
     >
       <div
         {...rest}
-        class={cx('scn-tooltip', local.class)}
+        class={cx('scx-tooltip', local.class)}
       >
         {local.children}
       </div>

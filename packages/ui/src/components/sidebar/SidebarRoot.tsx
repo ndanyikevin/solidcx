@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+﻿import type { Component } from 'solid-js'
 import {
     Show,
     splitProps,
@@ -44,7 +44,7 @@ const SidebarRootContent: Component<
             >
                 <button
                     type="button"
-                    class="scn-sidebar__backdrop"
+                    class="scx-sidebar__backdrop"
                     aria-label="Close sidebar"
                     onClick={() => {
                         sidebar.closeMobile()
@@ -72,15 +72,15 @@ const SidebarRootContent: Component<
                         : undefined
                 }
                 class={cx(
-                    'scn-sidebar',
+                    'scx-sidebar',
                     !sidebar.mobile() &&
                     sidebar.collapsed() &&
-                    'scn-sidebar--collapsed',
+                    'scx-sidebar--collapsed',
                     sidebar.mobile() &&
-                    'scn-sidebar--mobile',
+                    'scx-sidebar--mobile',
                     sidebar.mobile() &&
                     sidebar.mobileOpen() &&
-                    'scn-sidebar--mobile-open',
+                    'scx-sidebar--mobile-open',
                     local.class,
                 )}
             >

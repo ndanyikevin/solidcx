@@ -1,4 +1,4 @@
-import type { Component, JSX } from 'solid-js'
+﻿import type { Component, JSX } from 'solid-js'
 import {
     createEffect,
     createSignal,
@@ -633,11 +633,11 @@ export const DateField: Component<
         <div
             {...rest}
             class={cx(
-                'scn-date-field',
+                'scx-date-field',
                 invalid() &&
-                'scn-date-field--invalid',
+                'scx-date-field--invalid',
                 local.disabled &&
-                'scn-date-field--disabled',
+                'scx-date-field--disabled',
                 local.class,
             )}
             aria-invalid={
@@ -645,7 +645,7 @@ export const DateField: Component<
             }
         >
             <div
-                class="scn-date-field__control"
+                class="scx-date-field__control"
                 aria-label={
                     local['aria-label'] ??
                     'Date'
@@ -655,7 +655,7 @@ export const DateField: Component<
                     ref={(el) =>
                         (dayRef = el)
                     }
-                    class="scn-date-field__segment"
+                    class="scx-date-field__segment"
                     type="text"
                     inputmode="numeric"
                     autocomplete="bday-day"
@@ -682,7 +682,7 @@ export const DateField: Component<
                 />
 
                 <span
-                    class="scn-date-field__separator"
+                    class="scx-date-field__separator"
                     aria-hidden="true"
                 >
                     /
@@ -692,7 +692,7 @@ export const DateField: Component<
                     ref={(el) =>
                         (monthRef = el)
                     }
-                    class="scn-date-field__segment"
+                    class="scx-date-field__segment"
                     type="text"
                     inputmode="numeric"
                     autocomplete="bday-month"
@@ -719,7 +719,7 @@ export const DateField: Component<
                 />
 
                 <span
-                    class="scn-date-field__separator"
+                    class="scx-date-field__separator"
                     aria-hidden="true"
                 >
                     /
@@ -729,7 +729,7 @@ export const DateField: Component<
                     ref={(el) =>
                         (yearRef = el)
                     }
-                    class="scn-date-field__segment scn-date-field__segment--year"
+                    class="scx-date-field__segment scx-date-field__segment--year"
                     type="text"
                     inputmode="numeric"
                     autocomplete="bday-year"
